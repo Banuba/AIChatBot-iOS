@@ -1,0 +1,43 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name ChatBot
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+@_exported import ChatBot
+import Combine
+import DeveloperToolsSupport
+import Foundation
+import Swift
+import SwiftUI
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os.log
+import os
+@_hasMissingDesignatedInitializers public class ChatBotManager {
+  public static let shared: ChatBot.ChatBotManager
+  public func makeChatBotController(with configuration: ChatBot.ChatBotConfiguration) -> UIKit.UIViewController
+  @objc deinit
+}
+public protocol ReusableView : AnyObject {
+}
+extension ChatBot.ReusableView {
+  public static var reuseIdentifier: Swift.String {
+    get
+  }
+}
+public protocol NibLoadable : AnyObject {
+  static var nib: UIKit.UINib { get }
+}
+extension ChatBot.NibLoadable {
+  public static var nib: UIKit.UINib {
+    get
+  }
+}
+extension ChatBot.NibLoadable where Self : UIKit.UIView {
+  public static func loadFromNib() -> Self
+}
+public struct ChatBotConfiguration {
+  public init(privacyPolicyUrl: Swift.String, authHeaderName: Swift.String, authHeaderValue: Swift.String, headerUserPremiumValue: Swift.String, requestStartUrl: Swift.String, requestHistoryUrl: Swift.String, requestSendMessageUrl: Swift.String, requestCheckOptInUrl: Swift.String, requestPostOptInUrl: Swift.String, requestClearHistoryUrl: Swift.String, userImage: UIKit.UIImage, byPassLimits: Swift.Bool, useLightTheme: Swift.Bool)
+}

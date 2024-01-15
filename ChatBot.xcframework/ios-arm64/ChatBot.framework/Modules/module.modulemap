@@ -1,0 +1,11 @@
+framework module ChatBot {
+  umbrella header "ChatBot.h"
+  export *
+
+  module * { export * }
+}
+
+module ChatBot.Swift {
+  header "ChatBot-Swift.h"
+  requires objc
+}
