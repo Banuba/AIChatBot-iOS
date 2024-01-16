@@ -937,6 +937,13 @@
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
             "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ViewTypeProtocol",
+            "printedName": "ViewTypeProtocol",
+            "usr": "s:6Lottie16ViewTypeProtocolP",
+            "mangledName": "$s6Lottie16ViewTypeProtocolP"
           }
         ]
       },
@@ -2773,18 +2780,24 @@
         "children": [
           {
             "kind": "Function",
-            "name": "chatBotViewControllerDidClose",
-            "printedName": "chatBotViewControllerDidClose()",
+            "name": "chatBotDidClose",
+            "printedName": "chatBotDidClose(showPaywall:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:7ChatBot0aB8DelegateP04chatB22ViewControllerDidCloseyyF",
-            "mangledName": "$s7ChatBot0aB8DelegateP04chatB22ViewControllerDidCloseyyF",
+            "usr": "s:7ChatBot0aB8DelegateP04chatB8DidClose11showPaywallySb_tF",
+            "mangledName": "$s7ChatBot0aB8DelegateP04chatB8DidClose11showPaywallySb_tF",
             "moduleName": "ChatBot",
             "genericSig": "<τ_0_0 where τ_0_0 : ChatBot.ChatBotDelegate>",
             "sugared_genericSig": "<Self where Self : ChatBot.ChatBotDelegate>",
@@ -2796,7 +2809,12 @@
         "declKind": "Protocol",
         "usr": "s:7ChatBot0aB8DelegateP",
         "mangledName": "$s7ChatBot0aB8DelegateP",
-        "moduleName": "ChatBot"
+        "moduleName": "ChatBot",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -2805,28 +2823,27 @@
         "children": [
           {
             "kind": "Var",
-            "name": "shared",
-            "printedName": "shared",
+            "name": "delegate",
+            "printedName": "delegate",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "ChatBotManager",
-                "printedName": "ChatBot.ChatBotManager",
-                "usr": "s:7ChatBot0aB7ManagerC"
+                "name": "WeakStorage",
+                "printedName": "ChatBot.ChatBotDelegate?"
               }
             ],
             "declKind": "Var",
-            "usr": "s:7ChatBot0aB7ManagerC6sharedACvpZ",
-            "mangledName": "$s7ChatBot0aB7ManagerC6sharedACvpZ",
+            "usr": "s:7ChatBot0aB7ManagerC8delegateAA0aB8Delegate_pSgvp",
+            "mangledName": "$s7ChatBot0aB7ManagerC8delegateAA0aB8Delegate_pSgvp",
             "moduleName": "ChatBot",
-            "static": true,
+            "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
-              "Final",
               "HasStorage",
+              "ReferenceOwnership",
               "AccessControl"
             ],
-            "isLet": true,
+            "ownership": 1,
             "hasStorage": true,
             "accessors": [
               {
@@ -2836,51 +2853,80 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "ChatBotManager",
-                    "printedName": "ChatBot.ChatBotManager",
-                    "usr": "s:7ChatBot0aB7ManagerC"
+                    "name": "Optional",
+                    "printedName": "ChatBot.ChatBotDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatBotDelegate",
+                        "printedName": "ChatBot.ChatBotDelegate",
+                        "usr": "s:7ChatBot0aB8DelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7ChatBot0aB7ManagerC6sharedACvgZ",
-                "mangledName": "$s7ChatBot0aB7ManagerC6sharedACvgZ",
+                "usr": "s:7ChatBot0aB7ManagerC8delegateAA0aB8Delegate_pSgvg",
+                "mangledName": "$s7ChatBot0aB7ManagerC8delegateAA0aB8Delegate_pSgvg",
                 "moduleName": "ChatBot",
-                "static": true,
                 "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
+                "isOpen": true,
                 "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "makeChatBotController",
-            "printedName": "makeChatBotController(with:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
               },
               {
-                "kind": "TypeNominal",
-                "name": "ChatBotConfiguration",
-                "printedName": "ChatBot.ChatBotConfiguration",
-                "usr": "s:7ChatBot0aB13ConfigurationV"
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ChatBot.ChatBotDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatBotDelegate",
+                        "printedName": "ChatBot.ChatBotDelegate",
+                        "usr": "s:7ChatBot0aB8DelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7ChatBot0aB7ManagerC8delegateAA0aB8Delegate_pSgvs",
+                "mangledName": "$s7ChatBot0aB7ManagerC8delegateAA0aB8Delegate_pSgvs",
+                "moduleName": "ChatBot",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7ChatBot0aB7ManagerC8delegateAA0aB8Delegate_pSgvM",
+                "mangledName": "$s7ChatBot0aB7ManagerC8delegateAA0aB8Delegate_pSgvM",
+                "moduleName": "ChatBot",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
               }
-            ],
-            "declKind": "Func",
-            "usr": "s:7ChatBot0aB7ManagerC04makeaB10Controller4withSo06UIViewE0CAA0aB13ConfigurationV_tF",
-            "mangledName": "$s7ChatBot0aB7ManagerC04makeaB10Controller4withSo06UIViewE0CAA0aB13ConfigurationV_tF",
-            "moduleName": "ChatBot",
-            "isOpen": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
+            ]
           },
           {
             "kind": "Constructor",
@@ -2898,8 +2944,63 @@
             "usr": "s:7ChatBot0aB7ManagerCACycfc",
             "mangledName": "$s7ChatBot0aB7ManagerCACycfc",
             "moduleName": "ChatBot",
-            "implicit": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "createChatBotController",
+            "printedName": "createChatBotController(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ChatBotConfiguration",
+                "printedName": "ChatBot.ChatBotConfiguration",
+                "usr": "s:7ChatBot0aB13ConfigurationV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7ChatBot0aB7ManagerC06createaB10Controller4withSo06UIViewE0CAA0aB13ConfigurationV_tF",
+            "mangledName": "$s7ChatBot0aB7ManagerC06createaB10Controller4withSo06UIViewE0CAA0aB13ConfigurationV_tF",
+            "moduleName": "ChatBot",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "сhatBotDidClose",
+            "printedName": "сhatBotDidClose(showPaywall:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7ChatBot0aB7ManagerC0018hatBotDidClose_EAl11showPaywallySb_tF",
+            "mangledName": "$s7ChatBot0aB7ManagerC0018hatBotDidClose_EAl11showPaywallySb_tF",
+            "moduleName": "ChatBot",
+            "isOpen": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -2910,7 +3011,15 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "RouterDelegate",
+            "printedName": "RouterDelegate",
+            "usr": "s:7ChatBot14RouterDelegateP",
+            "mangledName": "$s7ChatBot14RouterDelegateP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -4805,6 +4914,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "ViewTypeProtocol",
+            "printedName": "ViewTypeProtocol",
+            "usr": "s:6Lottie16ViewTypeProtocolP",
+            "mangledName": "$s6Lottie16ViewTypeProtocolP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
@@ -5175,6 +5291,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "ViewTypeProtocol",
+            "printedName": "ViewTypeProtocol",
+            "usr": "s:6Lottie16ViewTypeProtocolP",
+            "mangledName": "$s6Lottie16ViewTypeProtocolP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
@@ -5219,6 +5342,7 @@
               "HasStorage"
             ],
             "fixedbinaryorder": 0,
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -5243,56 +5367,55 @@
                   "Final"
                 ],
                 "accessorKind": "get"
-              },
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "router",
+            "printedName": "router",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Router",
+                "printedName": "ChatBot.Router",
+                "usr": "c:@M@ChatBot@objc(cs)Router"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7ChatBot0aB17HistoryInteractorC6routerAA6RouterCvp",
+            "mangledName": "$s7ChatBot0aB17HistoryInteractorC6routerAA6RouterCvp",
+            "moduleName": "ChatBot",
+            "declAttributes": [
+              "Final",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 1,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
               {
                 "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
+                "name": "Get",
+                "printedName": "Get()",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ChatBotAPI",
-                    "printedName": "ChatBot.ChatBotAPI",
-                    "usr": "s:7ChatBot0aB3APIC"
+                    "name": "Router",
+                    "printedName": "ChatBot.Router",
+                    "usr": "c:@M@ChatBot@objc(cs)Router"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7ChatBot0aB17HistoryInteractorC04chatB3APIAA0abF0Cvs",
-                "mangledName": "$s7ChatBot0aB17HistoryInteractorC04chatB3APIAA0abF0Cvs",
+                "usr": "s:7ChatBot0aB17HistoryInteractorC6routerAA6RouterCvg",
+                "mangledName": "$s7ChatBot0aB17HistoryInteractorC6routerAA6RouterCvg",
                 "moduleName": "ChatBot",
                 "implicit": true,
                 "declAttributes": [
                   "Transparent",
                   "Final"
                 ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7ChatBot0aB17HistoryInteractorC04chatB3APIAA0abF0CvM",
-                "mangledName": "$s7ChatBot0aB17HistoryInteractorC04chatB3APIAA0abF0CvM",
-                "moduleName": "ChatBot",
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent",
-                  "Final"
-                ],
-                "accessorKind": "_modify"
+                "accessorKind": "get"
               }
             ]
           },
@@ -5316,7 +5439,8 @@
               "Final",
               "HasStorage"
             ],
-            "fixedbinaryorder": 1,
+            "fixedbinaryorder": 2,
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -5341,63 +5465,13 @@
                   "Final"
                 ],
                 "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ChatBotConfiguration",
-                    "printedName": "ChatBot.ChatBotConfiguration",
-                    "usr": "s:7ChatBot0aB13ConfigurationV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7ChatBot0aB17HistoryInteractorC13configurationAA0aB13ConfigurationVvs",
-                "mangledName": "$s7ChatBot0aB17HistoryInteractorC13configurationAA0aB13ConfigurationVvs",
-                "moduleName": "ChatBot",
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent",
-                  "Final"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7ChatBot0aB17HistoryInteractorC13configurationAA0aB13ConfigurationVvM",
-                "mangledName": "$s7ChatBot0aB17HistoryInteractorC13configurationAA0aB13ConfigurationVvM",
-                "moduleName": "ChatBot",
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent",
-                  "Final"
-                ],
-                "accessorKind": "_modify"
               }
             ]
           },
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(configuration:)",
+            "printedName": "init(configuration:router:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5410,11 +5484,17 @@
                 "name": "ChatBotConfiguration",
                 "printedName": "ChatBot.ChatBotConfiguration",
                 "usr": "s:7ChatBot0aB13ConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Router",
+                "printedName": "ChatBot.Router",
+                "usr": "c:@M@ChatBot@objc(cs)Router"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:7ChatBot0aB17HistoryInteractorC13configurationAcA0aB13ConfigurationV_tcfc",
-            "mangledName": "$s7ChatBot0aB17HistoryInteractorC13configurationAcA0aB13ConfigurationV_tcfc",
+            "usr": "s:7ChatBot0aB17HistoryInteractorC13configuration6routerAcA0aB13ConfigurationV_AA6RouterCtcfc",
+            "mangledName": "$s7ChatBot0aB17HistoryInteractorC13configuration6routerAcA0aB13ConfigurationV_AA6RouterCtcfc",
             "moduleName": "ChatBot",
             "init_kind": "Designated"
           },
@@ -5462,7 +5542,7 @@
               "HasStorage",
               "AccessControl"
             ],
-            "fixedbinaryorder": 2,
+            "fixedbinaryorder": 3,
             "hasStorage": true
           },
           {
@@ -8116,6 +8196,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "ViewTypeProtocol",
+            "printedName": "ViewTypeProtocol",
+            "usr": "s:6Lottie16ViewTypeProtocolP",
+            "mangledName": "$s6Lottie16ViewTypeProtocolP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
@@ -8977,6 +9064,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "ViewTypeProtocol",
+            "printedName": "ViewTypeProtocol",
+            "usr": "s:6Lottie16ViewTypeProtocolP",
+            "mangledName": "$s6Lottie16ViewTypeProtocolP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
@@ -9559,6 +9653,33 @@
         "children": [
           {
             "kind": "Var",
+            "name": "view",
+            "printedName": "view",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnownedStorage",
+                "printedName": "ChatBot.ChatBotSelectionViewController"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7ChatBot0aB19SelectionInteractorC4view33_7067F9C65B987266445572530E5FD1BALLAA0abC14ViewControllerCvp",
+            "mangledName": "$s7ChatBot0aB19SelectionInteractorC4view33_7067F9C65B987266445572530E5FD1BALLAA0abC14ViewControllerCvp",
+            "moduleName": "ChatBot",
+            "isInternal": true,
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 0,
+            "ownership": 2,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
             "name": "configuration",
             "printedName": "configuration",
             "children": [
@@ -9573,11 +9694,12 @@
             "usr": "s:7ChatBot0aB19SelectionInteractorC13configurationAA0aB13ConfigurationVvp",
             "mangledName": "$s7ChatBot0aB19SelectionInteractorC13configurationAA0aB13ConfigurationVvp",
             "moduleName": "ChatBot",
-            "isOpen": true,
             "declAttributes": [
+              "Final",
               "HasStorage"
             ],
-            "fixedbinaryorder": 0,
+            "fixedbinaryorder": 1,
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -9597,61 +9719,11 @@
                 "mangledName": "$s7ChatBot0aB19SelectionInteractorC13configurationAA0aB13ConfigurationVvg",
                 "moduleName": "ChatBot",
                 "implicit": true,
-                "isOpen": true,
                 "declAttributes": [
-                  "Transparent"
+                  "Transparent",
+                  "Final"
                 ],
                 "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ChatBotConfiguration",
-                    "printedName": "ChatBot.ChatBotConfiguration",
-                    "usr": "s:7ChatBot0aB13ConfigurationV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7ChatBot0aB19SelectionInteractorC13configurationAA0aB13ConfigurationVvs",
-                "mangledName": "$s7ChatBot0aB19SelectionInteractorC13configurationAA0aB13ConfigurationVvs",
-                "moduleName": "ChatBot",
-                "implicit": true,
-                "isOpen": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7ChatBot0aB19SelectionInteractorC13configurationAA0aB13ConfigurationVvM",
-                "mangledName": "$s7ChatBot0aB19SelectionInteractorC13configurationAA0aB13ConfigurationVvM",
-                "moduleName": "ChatBot",
-                "implicit": true,
-                "isOpen": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
-                "accessorKind": "_modify"
               }
             ]
           },
@@ -9671,12 +9743,13 @@
             "usr": "s:7ChatBot0aB19SelectionInteractorC04chatB3APIAA0abF0Cvp",
             "mangledName": "$s7ChatBot0aB19SelectionInteractorC04chatB3APIAA0abF0Cvp",
             "moduleName": "ChatBot",
-            "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Final",
               "HasStorage"
             ],
-            "fixedbinaryorder": 1,
+            "fixedbinaryorder": 2,
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -9696,61 +9769,60 @@
                 "mangledName": "$s7ChatBot0aB19SelectionInteractorC04chatB3APIAA0abF0Cvg",
                 "moduleName": "ChatBot",
                 "implicit": true,
-                "isOpen": true,
                 "declAttributes": [
-                  "Transparent"
+                  "Transparent",
+                  "Final"
                 ],
                 "accessorKind": "get"
-              },
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "router",
+            "printedName": "router",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Router",
+                "printedName": "ChatBot.Router",
+                "usr": "c:@M@ChatBot@objc(cs)Router"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7ChatBot0aB19SelectionInteractorC6routerAA6RouterCvp",
+            "mangledName": "$s7ChatBot0aB19SelectionInteractorC6routerAA6RouterCvp",
+            "moduleName": "ChatBot",
+            "declAttributes": [
+              "Final",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 3,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
               {
                 "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
+                "name": "Get",
+                "printedName": "Get()",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ChatBotAPI",
-                    "printedName": "ChatBot.ChatBotAPI",
-                    "usr": "s:7ChatBot0aB3APIC"
+                    "name": "Router",
+                    "printedName": "ChatBot.Router",
+                    "usr": "c:@M@ChatBot@objc(cs)Router"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7ChatBot0aB19SelectionInteractorC04chatB3APIAA0abF0Cvs",
-                "mangledName": "$s7ChatBot0aB19SelectionInteractorC04chatB3APIAA0abF0Cvs",
+                "usr": "s:7ChatBot0aB19SelectionInteractorC6routerAA6RouterCvg",
+                "mangledName": "$s7ChatBot0aB19SelectionInteractorC6routerAA6RouterCvg",
                 "moduleName": "ChatBot",
                 "implicit": true,
-                "isOpen": true,
                 "declAttributes": [
-                  "Transparent"
+                  "Transparent",
+                  "Final"
                 ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7ChatBot0aB19SelectionInteractorC04chatB3APIAA0abF0CvM",
-                "mangledName": "$s7ChatBot0aB19SelectionInteractorC04chatB3APIAA0abF0CvM",
-                "moduleName": "ChatBot",
-                "implicit": true,
-                "isOpen": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
-                "accessorKind": "_modify"
+                "accessorKind": "get"
               }
             ]
           },
@@ -9797,13 +9869,13 @@
               "HasStorage",
               "AccessControl"
             ],
-            "fixedbinaryorder": 2,
+            "fixedbinaryorder": 4,
             "hasStorage": true
           },
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(configuration:)",
+            "printedName": "init(view:configuration:router:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -9813,14 +9885,26 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "ChatBotSelectionViewController",
+                "printedName": "ChatBot.ChatBotSelectionViewController",
+                "usr": "c:@M@ChatBot@objc(cs)ChatBotSelectionViewController"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "ChatBotConfiguration",
                 "printedName": "ChatBot.ChatBotConfiguration",
                 "usr": "s:7ChatBot0aB13ConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Router",
+                "printedName": "ChatBot.Router",
+                "usr": "c:@M@ChatBot@objc(cs)Router"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:7ChatBot0aB19SelectionInteractorC13configurationAcA0aB13ConfigurationV_tcfc",
-            "mangledName": "$s7ChatBot0aB19SelectionInteractorC13configurationAcA0aB13ConfigurationV_tcfc",
+            "usr": "s:7ChatBot0aB19SelectionInteractorC4view13configuration6routerAcA0abC14ViewControllerC_AA0aB13ConfigurationVAA6RouterCtcfc",
+            "mangledName": "$s7ChatBot0aB19SelectionInteractorC4view13configuration6routerAcA0abC14ViewControllerC_AA0aB13ConfigurationVAA6RouterCtcfc",
             "moduleName": "ChatBot",
             "init_kind": "Designated"
           },
@@ -18205,16 +18289,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "ChatBot",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "TypeDecl",
         "name": "ChatBotHistoryTableDelegate",
         "printedName": "ChatBotHistoryTableDelegate",
@@ -18584,12 +18658,13 @@
             "usr": "s:7ChatBot0aB19HistoryTableHandlerC13configurationAA0aB13ConfigurationVvp",
             "mangledName": "$s7ChatBot0aB19HistoryTableHandlerC13configurationAA0aB13ConfigurationVvp",
             "moduleName": "ChatBot",
-            "isOpen": true,
             "declAttributes": [
               "Custom",
+              "Final",
               "HasStorage"
             ],
             "fixedbinaryorder": 3,
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -18609,52 +18684,10 @@
                 "mangledName": "$s7ChatBot0aB19HistoryTableHandlerC13configurationAA0aB13ConfigurationVvg",
                 "moduleName": "ChatBot",
                 "implicit": true,
-                "isOpen": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ChatBotConfiguration",
-                    "printedName": "ChatBot.ChatBotConfiguration",
-                    "usr": "s:7ChatBot0aB13ConfigurationV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7ChatBot0aB19HistoryTableHandlerC13configurationAA0aB13ConfigurationVvs",
-                "mangledName": "$s7ChatBot0aB19HistoryTableHandlerC13configurationAA0aB13ConfigurationVvs",
-                "moduleName": "ChatBot",
-                "implicit": true,
-                "isOpen": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7ChatBot0aB19HistoryTableHandlerC13configurationAA0aB13ConfigurationVvM",
-                "mangledName": "$s7ChatBot0aB19HistoryTableHandlerC13configurationAA0aB13ConfigurationVvM",
-                "moduleName": "ChatBot",
-                "implicit": true,
-                "isOpen": true,
-                "accessorKind": "_modify"
               }
             ]
           },
@@ -19025,17 +19058,23 @@
           {
             "kind": "Function",
             "name": "scrollToBottom",
-            "printedName": "scrollToBottom()",
+            "printedName": "scrollToBottom(animated:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:7ChatBot0aB19HistoryTableHandlerC14scrollToBottomyyF",
-            "mangledName": "$s7ChatBot0aB19HistoryTableHandlerC14scrollToBottomyyF",
+            "usr": "s:7ChatBot0aB19HistoryTableHandlerC14scrollToBottom8animatedySb_tF",
+            "mangledName": "$s7ChatBot0aB19HistoryTableHandlerC14scrollToBottom8animatedySb_tF",
             "moduleName": "ChatBot",
             "isOpen": true,
             "declAttributes": [
@@ -22071,6 +22110,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "ViewTypeProtocol",
+            "printedName": "ViewTypeProtocol",
+            "usr": "s:6Lottie16ViewTypeProtocolP",
+            "mangledName": "$s6Lottie16ViewTypeProtocolP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
@@ -22782,10 +22828,425 @@
           },
           {
             "kind": "Conformance",
+            "name": "ViewTypeProtocol",
+            "printedName": "ViewTypeProtocol",
+            "usr": "s:6Lottie16ViewTypeProtocolP",
+            "mangledName": "$s6Lottie16ViewTypeProtocolP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ChatBot",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RouterDelegate",
+        "printedName": "RouterDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "сhatBotDidClose",
+            "printedName": "сhatBotDidClose(showPaywall:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7ChatBot14RouterDelegateP0018hatBotDidClose_EAl11showPaywallySb_tF",
+            "mangledName": "$s7ChatBot14RouterDelegateP0018hatBotDidClose_EAl11showPaywallySb_tF",
+            "moduleName": "ChatBot",
+            "genericSig": "<τ_0_0 where τ_0_0 : ChatBot.RouterDelegate>",
+            "sugared_genericSig": "<Self where Self : ChatBot.RouterDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:7ChatBot14RouterDelegateP",
+        "mangledName": "$s7ChatBot14RouterDelegateP",
+        "moduleName": "ChatBot",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Router",
+        "printedName": "Router",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "ChatBot.RouterDelegate?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7ChatBot6RouterC8delegateAA0C8Delegate_pSgvp",
+            "mangledName": "$s7ChatBot6RouterC8delegateAA0C8Delegate_pSgvp",
+            "moduleName": "ChatBot",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership"
+            ],
+            "fixedbinaryorder": 0,
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ChatBot.RouterDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RouterDelegate",
+                        "printedName": "ChatBot.RouterDelegate",
+                        "usr": "s:7ChatBot14RouterDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7ChatBot6RouterC8delegateAA0C8Delegate_pSgvg",
+                "mangledName": "$s7ChatBot6RouterC8delegateAA0C8Delegate_pSgvg",
+                "moduleName": "ChatBot",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ChatBot.RouterDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RouterDelegate",
+                        "printedName": "ChatBot.RouterDelegate",
+                        "usr": "s:7ChatBot14RouterDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7ChatBot6RouterC8delegateAA0C8Delegate_pSgvs",
+                "mangledName": "$s7ChatBot6RouterC8delegateAA0C8Delegate_pSgvs",
+                "moduleName": "ChatBot",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7ChatBot6RouterC8delegateAA0C8Delegate_pSgvM",
+                "mangledName": "$s7ChatBot6RouterC8delegateAA0C8Delegate_pSgvM",
+                "moduleName": "ChatBot",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "navigateToChat",
+            "printedName": "navigateToChat(from:with:configuration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ChatBotViewModel",
+                "printedName": "ChatBot.ChatBotViewModel",
+                "usr": "s:7ChatBot0aB9ViewModelV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ChatBotConfiguration",
+                "printedName": "ChatBot.ChatBotConfiguration",
+                "usr": "s:7ChatBot0aB13ConfigurationV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7ChatBot6RouterC010navigateToA04from4with13configurationySo16UIViewControllerC_AA0aB9ViewModelVAA0aB13ConfigurationVtF",
+            "mangledName": "$s7ChatBot6RouterC010navigateToA04from4with13configurationySo16UIViewControllerC_AA0aB9ViewModelVAA0aB13ConfigurationVtF",
+            "moduleName": "ChatBot",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "dismissChatBot",
+            "printedName": "dismissChatBot(from:showPaywall:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7ChatBot6RouterC07dismissaB04from11showPaywallySo16UIViewControllerC_SbtF",
+            "mangledName": "$s7ChatBot6RouterC07dismissaB04from11showPaywallySo16UIViewControllerC_SbtF",
+            "moduleName": "ChatBot",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pop",
+            "printedName": "pop(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7ChatBot6RouterC3pop4fromySo16UIViewControllerC_tF",
+            "mangledName": "$s7ChatBot6RouterC3pop4fromySo16UIViewControllerC_tF",
+            "moduleName": "ChatBot",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "navigateToPrivacypolicy",
+            "printedName": "navigateToPrivacypolicy(from:configuration:willPresentHandler:willDismissHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ChatBotConfiguration",
+                "printedName": "ChatBot.ChatBotConfiguration",
+                "usr": "s:7ChatBot0aB13ConfigurationV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7ChatBot6RouterC23navigateToPrivacypolicy4from13configuration18willPresentHandler0i7DismissK0ySo16UIViewControllerC_AA0aB13ConfigurationVyycyyctF",
+            "mangledName": "$s7ChatBot6RouterC23navigateToPrivacypolicy4from13configuration18willPresentHandler0i7DismissK0ySo16UIViewControllerC_AA0aB13ConfigurationVyycyyctF",
+            "moduleName": "ChatBot",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Router",
+                "printedName": "ChatBot.Router",
+                "usr": "c:@M@ChatBot@objc(cs)Router"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ChatBot@objc(cs)Router(im)init",
+            "mangledName": "$s7ChatBot6RouterCACycfc",
+            "moduleName": "ChatBot",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ChatBot@objc(cs)Router",
+        "mangledName": "$s7ChatBot6RouterC",
+        "moduleName": "ChatBot",
+        "isOpen": true,
+        "declAttributes": [
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -23714,6 +24175,7 @@
               "HasStorage"
             ],
             "fixedbinaryorder": 2,
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -23737,54 +24199,6 @@
                   "Final"
                 ],
                 "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ChatBotConfiguration",
-                    "printedName": "ChatBot.ChatBotConfiguration",
-                    "usr": "s:7ChatBot0aB13ConfigurationV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7ChatBot0aB26SelectionCollectionHandlerC13configurationAA0aB13ConfigurationVvs",
-                "mangledName": "$s7ChatBot0aB26SelectionCollectionHandlerC13configurationAA0aB13ConfigurationVvs",
-                "moduleName": "ChatBot",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7ChatBot0aB26SelectionCollectionHandlerC13configurationAA0aB13ConfigurationVvM",
-                "mangledName": "$s7ChatBot0aB26SelectionCollectionHandlerC13configurationAA0aB13ConfigurationVvM",
-                "moduleName": "ChatBot",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "_modify"
               }
             ]
           },
@@ -30042,24 +30456,31 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Lottie",
+        "printedName": "Lottie",
+        "declKind": "Import",
+        "moduleName": "ChatBot"
+      },
+      {
         "kind": "TypeDecl",
         "name": "ChatBotHistoryCell",
         "printedName": "ChatBotHistoryCell",
         "children": [
           {
             "kind": "Var",
-            "name": "loadingImage",
-            "printedName": "loadingImage",
+            "name": "messageLoadingAnimationView",
+            "printedName": "messageLoadingAnimationView",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "WeakStorage",
-                "printedName": "UIKit.UIImageView?"
+                "printedName": "Lottie.LottieAnimationView?"
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@ChatBot@objc(cs)ChatBotHistoryCell(py)loadingImage",
-            "mangledName": "$s7ChatBot0aB11HistoryCellC12loadingImageSo11UIImageViewCSgvp",
+            "usr": "c:@M@ChatBot@objc(cs)ChatBotHistoryCell(py)messageLoadingAnimationView",
+            "mangledName": "$s7ChatBot0aB11HistoryCellC27messageLoadingAnimationView6Lottie0igH0CSgvp",
             "moduleName": "ChatBot",
             "isOpen": true,
             "declAttributes": [
@@ -30082,21 +30503,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "ImplicitlyUnwrappedOptional",
-                    "printedName": "UIKit.UIImageView?",
+                    "printedName": "Lottie.LottieAnimationView?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "UIImageView",
-                        "printedName": "UIKit.UIImageView",
-                        "usr": "c:objc(cs)UIImageView"
+                        "name": "LottieAnimationView",
+                        "printedName": "Lottie.LottieAnimationView",
+                        "usr": "c:@M@Lottie@objc(cs)LottieAnimationView"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@ChatBot@objc(cs)ChatBotHistoryCell(im)loadingImage",
-                "mangledName": "$s7ChatBot0aB11HistoryCellC12loadingImageSo11UIImageViewCSgvg",
+                "usr": "c:@M@ChatBot@objc(cs)ChatBotHistoryCell(im)messageLoadingAnimationView",
+                "mangledName": "$s7ChatBot0aB11HistoryCellC27messageLoadingAnimationView6Lottie0igH0CSgvg",
                 "moduleName": "ChatBot",
                 "implicit": true,
                 "isOpen": true,
@@ -30118,21 +30539,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "ImplicitlyUnwrappedOptional",
-                    "printedName": "UIKit.UIImageView?",
+                    "printedName": "Lottie.LottieAnimationView?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "UIImageView",
-                        "printedName": "UIKit.UIImageView",
-                        "usr": "c:objc(cs)UIImageView"
+                        "name": "LottieAnimationView",
+                        "printedName": "Lottie.LottieAnimationView",
+                        "usr": "c:@M@Lottie@objc(cs)LottieAnimationView"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@ChatBot@objc(cs)ChatBotHistoryCell(im)setLoadingImage:",
-                "mangledName": "$s7ChatBot0aB11HistoryCellC12loadingImageSo11UIImageViewCSgvs",
+                "usr": "c:@M@ChatBot@objc(cs)ChatBotHistoryCell(im)setMessageLoadingAnimationView:",
+                "mangledName": "$s7ChatBot0aB11HistoryCellC27messageLoadingAnimationView6Lottie0igH0CSgvs",
                 "moduleName": "ChatBot",
                 "implicit": true,
                 "isOpen": true,
@@ -30153,8 +30574,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7ChatBot0aB11HistoryCellC12loadingImageSo11UIImageViewCSgvM",
-                "mangledName": "$s7ChatBot0aB11HistoryCellC12loadingImageSo11UIImageViewCSgvM",
+                "usr": "s:7ChatBot0aB11HistoryCellC27messageLoadingAnimationView6Lottie0igH0CSgvM",
+                "mangledName": "$s7ChatBot0aB11HistoryCellC27messageLoadingAnimationView6Lottie0igH0CSgvM",
                 "moduleName": "ChatBot",
                 "implicit": true,
                 "isOpen": true,
@@ -32304,6 +32725,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "ViewTypeProtocol",
+            "printedName": "ViewTypeProtocol",
+            "usr": "s:6Lottie16ViewTypeProtocolP",
+            "mangledName": "$s6Lottie16ViewTypeProtocolP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
@@ -33421,110 +33849,6 @@
           },
           {
             "kind": "Var",
-            "name": "iconLoaderDark",
-            "printedName": "iconLoaderDark",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ImageResource",
-                "printedName": "ChatBot.ImageResource",
-                "usr": "s:7ChatBot13ImageResourceV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7ChatBot13ImageResourceV14iconLoaderDarkACvpZ",
-            "mangledName": "$s7ChatBot13ImageResourceV14iconLoaderDarkACvpZ",
-            "moduleName": "ChatBot",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ImageResource",
-                    "printedName": "ChatBot.ImageResource",
-                    "usr": "s:7ChatBot13ImageResourceV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7ChatBot13ImageResourceV14iconLoaderDarkACvgZ",
-                "mangledName": "$s7ChatBot13ImageResourceV14iconLoaderDarkACvgZ",
-                "moduleName": "ChatBot",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "iconLoaderLight",
-            "printedName": "iconLoaderLight",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ImageResource",
-                "printedName": "ChatBot.ImageResource",
-                "usr": "s:7ChatBot13ImageResourceV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7ChatBot13ImageResourceV15iconLoaderLightACvpZ",
-            "mangledName": "$s7ChatBot13ImageResourceV15iconLoaderLightACvpZ",
-            "moduleName": "ChatBot",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ImageResource",
-                    "printedName": "ChatBot.ImageResource",
-                    "usr": "s:7ChatBot13ImageResourceV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7ChatBot13ImageResourceV15iconLoaderLightACvgZ",
-                "mangledName": "$s7ChatBot13ImageResourceV15iconLoaderLightACvgZ",
-                "moduleName": "ChatBot",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "iconLoading",
             "printedName": "iconLoading",
             "children": [
@@ -34624,206 +34948,6 @@
             ],
             "usr": "s:Sx",
             "mangledName": "$sSx"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "UIViewController",
-        "printedName": "UIViewController",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "popToRootViewController",
-            "printedName": "popToRootViewController(animated:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(() -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "() -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      }
-                    ]
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So16UIViewControllerC7ChatBotE013popToRootViewB08animated10completionySb_yycSgtF",
-            "mangledName": "$sSo16UIViewControllerC7ChatBotE013popToRootViewB08animated10completionySb_yycSgtF",
-            "moduleName": "ChatBot",
-            "isOpen": true,
-            "declAttributes": [
-              "Custom"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "popViewController",
-            "printedName": "popViewController(animated:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(() -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "() -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      }
-                    ]
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:So16UIViewControllerC7ChatBotE07popViewB08animated10completionySb_yycSgtF",
-            "mangledName": "$sSo16UIViewControllerC7ChatBotE07popViewB08animated10completionySb_yycSgtF",
-            "moduleName": "ChatBot",
-            "isOpen": true,
-            "declAttributes": [
-              "Custom"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:objc(cs)UIViewController",
-        "moduleName": "UIKit",
-        "isOpen": true,
-        "intro_iOS": "2.0",
-        "objc_name": "UIViewController",
-        "declAttributes": [
-          "Available",
-          "ObjC",
-          "NonSendable",
-          "Custom",
-          "Dynamic"
-        ],
-        "superclassUsr": "c:objc(cs)UIResponder",
-        "isExternal": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "UIKit.UIResponder",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "UITraitChangeObservable",
-            "printedName": "UITraitChangeObservable",
-            "usr": "s:5UIKit23UITraitChangeObservableP",
-            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
         ]
       },
@@ -36325,102 +36449,6 @@
                 "declKind": "Accessor",
                 "usr": "s:So7UIImageC7ChatBotE13iconLeftLightABvgZ",
                 "mangledName": "$sSo7UIImageC7ChatBotE13iconLeftLightABvgZ",
-                "moduleName": "ChatBot",
-                "static": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "iconLoaderDark",
-            "printedName": "iconLoaderDark",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIImage",
-                "printedName": "UIKit.UIImage",
-                "usr": "c:objc(cs)UIImage"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:So7UIImageC7ChatBotE14iconLoaderDarkABvpZ",
-            "mangledName": "$sSo7UIImageC7ChatBotE14iconLoaderDarkABvpZ",
-            "moduleName": "ChatBot",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIImage",
-                    "printedName": "UIKit.UIImage",
-                    "usr": "c:objc(cs)UIImage"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:So7UIImageC7ChatBotE14iconLoaderDarkABvgZ",
-                "mangledName": "$sSo7UIImageC7ChatBotE14iconLoaderDarkABvgZ",
-                "moduleName": "ChatBot",
-                "static": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "iconLoaderLight",
-            "printedName": "iconLoaderLight",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIImage",
-                "printedName": "UIKit.UIImage",
-                "usr": "c:objc(cs)UIImage"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:So7UIImageC7ChatBotE15iconLoaderLightABvpZ",
-            "mangledName": "$sSo7UIImageC7ChatBotE15iconLoaderLightABvpZ",
-            "moduleName": "ChatBot",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIImage",
-                    "printedName": "UIKit.UIImage",
-                    "usr": "c:objc(cs)UIImage"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:So7UIImageC7ChatBotE15iconLoaderLightABvgZ",
-                "mangledName": "$sSo7UIImageC7ChatBotE15iconLoaderLightABvgZ",
                 "moduleName": "ChatBot",
                 "static": true,
                 "declAttributes": [
@@ -38469,119 +38497,105 @@
     {
       "filePath": "\/Users\/ivanghulidau\/Library\/Developer\/Xcode\/DerivedData\/GettrModules-ehrlbqdbpynbptbmflhiezhfpjiy\/Build\/Intermediates.noindex\/ChatBot.build\/Debug-iphonesimulator\/ChatBot.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2805,
-      "length": 18,
-      "value": "\"icon_loader_dark\""
-    },
-    {
-      "filePath": "\/Users\/ivanghulidau\/Library\/Developer\/Xcode\/DerivedData\/GettrModules-ehrlbqdbpynbptbmflhiezhfpjiy\/Build\/Intermediates.noindex\/ChatBot.build\/Debug-iphonesimulator\/ChatBot.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 2965,
-      "length": 19,
-      "value": "\"icon_loader_light\""
-    },
-    {
-      "filePath": "\/Users\/ivanghulidau\/Library\/Developer\/Xcode\/DerivedData\/GettrModules-ehrlbqdbpynbptbmflhiezhfpjiy\/Build\/Intermediates.noindex\/ChatBot.build\/Debug-iphonesimulator\/ChatBot.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 3117,
+      "offset": 2798,
       "length": 14,
       "value": "\"icon_loading\""
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Library\/Developer\/Xcode\/DerivedData\/GettrModules-ehrlbqdbpynbptbmflhiezhfpjiy\/Build\/Intermediates.noindex\/ChatBot.build\/Debug-iphonesimulator\/ChatBot.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3275,
+      "offset": 2956,
       "length": 20,
       "value": "\"icon_rephrase_dark\""
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Library\/Developer\/Xcode\/DerivedData\/GettrModules-ehrlbqdbpynbptbmflhiezhfpjiy\/Build\/Intermediates.noindex\/ChatBot.build\/Debug-iphonesimulator\/ChatBot.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3441,
+      "offset": 3122,
       "length": 21,
       "value": "\"icon_rephrase_light\""
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Library\/Developer\/Xcode\/DerivedData\/GettrModules-ehrlbqdbpynbptbmflhiezhfpjiy\/Build\/Intermediates.noindex\/ChatBot.build\/Debug-iphonesimulator\/ChatBot.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3600,
+      "offset": 3281,
       "length": 17,
       "value": "\"icon_right_dark\""
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Library\/Developer\/Xcode\/DerivedData\/GettrModules-ehrlbqdbpynbptbmflhiezhfpjiy\/Build\/Intermediates.noindex\/ChatBot.build\/Debug-iphonesimulator\/ChatBot.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3757,
+      "offset": 3438,
       "length": 18,
       "value": "\"icon_right_light\""
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Library\/Developer\/Xcode\/DerivedData\/GettrModules-ehrlbqdbpynbptbmflhiezhfpjiy\/Build\/Intermediates.noindex\/ChatBot.build\/Debug-iphonesimulator\/ChatBot.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3915,
+      "offset": 3596,
       "length": 18,
       "value": "\"icon_send_active\""
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Library\/Developer\/Xcode\/DerivedData\/GettrModules-ehrlbqdbpynbptbmflhiezhfpjiy\/Build\/Intermediates.noindex\/ChatBot.build\/Debug-iphonesimulator\/ChatBot.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4077,
+      "offset": 3758,
       "length": 20,
       "value": "\"icon_send_inactive\""
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Library\/Developer\/Xcode\/DerivedData\/GettrModules-ehrlbqdbpynbptbmflhiezhfpjiy\/Build\/Intermediates.noindex\/ChatBot.build\/Debug-iphonesimulator\/ChatBot.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4254,
+      "offset": 3935,
       "length": 27,
       "value": "\"icon_stop_responding_dark\""
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Library\/Developer\/Xcode\/DerivedData\/GettrModules-ehrlbqdbpynbptbmflhiezhfpjiy\/Build\/Intermediates.noindex\/ChatBot.build\/Debug-iphonesimulator\/ChatBot.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4440,
+      "offset": 4121,
       "length": 28,
       "value": "\"icon_stop_responding_light\""
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Library\/Developer\/Xcode\/DerivedData\/GettrModules-ehrlbqdbpynbptbmflhiezhfpjiy\/Build\/Intermediates.noindex\/ChatBot.build\/Debug-iphonesimulator\/ChatBot.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4617,
+      "offset": 4298,
       "length": 23,
       "value": "\"icon_thumbs_down_dark\""
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Library\/Developer\/Xcode\/DerivedData\/GettrModules-ehrlbqdbpynbptbmflhiezhfpjiy\/Build\/Intermediates.noindex\/ChatBot.build\/Debug-iphonesimulator\/ChatBot.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4791,
+      "offset": 4472,
       "length": 24,
       "value": "\"icon_thumbs_down_light\""
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Library\/Developer\/Xcode\/DerivedData\/GettrModules-ehrlbqdbpynbptbmflhiezhfpjiy\/Build\/Intermediates.noindex\/ChatBot.build\/Debug-iphonesimulator\/ChatBot.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4960,
+      "offset": 4641,
       "length": 21,
       "value": "\"icon_thumbs_up_dark\""
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Library\/Developer\/Xcode\/DerivedData\/GettrModules-ehrlbqdbpynbptbmflhiezhfpjiy\/Build\/Intermediates.noindex\/ChatBot.build\/Debug-iphonesimulator\/ChatBot.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5128,
+      "offset": 4809,
       "length": 22,
       "value": "\"icon_thumbs_up_light\""
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Library\/Developer\/Xcode\/DerivedData\/GettrModules-ehrlbqdbpynbptbmflhiezhfpjiy\/Build\/Intermediates.noindex\/ChatBot.build\/Debug-iphonesimulator\/ChatBot.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5268,
+      "offset": 4949,
       "length": 6,
       "value": "\"ruby\""
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Library\/Developer\/Xcode\/DerivedData\/GettrModules-ehrlbqdbpynbptbmflhiezhfpjiy\/Build\/Intermediates.noindex\/ChatBot.build\/Debug-iphonesimulator\/ChatBot.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5392,
+      "offset": 5073,
       "length": 6,
       "value": "\"user\""
     }
