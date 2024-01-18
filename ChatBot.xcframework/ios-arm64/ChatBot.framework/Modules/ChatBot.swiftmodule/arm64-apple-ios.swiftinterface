@@ -6,7 +6,6 @@
 import Combine
 import DeveloperToolsSupport
 import Foundation
-import Lottie
 import Swift
 import SwiftUI
 import UIKit
@@ -32,6 +31,34 @@ extension ChatBot.ReusableView {
     get
   }
 }
+public enum LocalizedStrings {
+  public enum SelectionScreen {
+  }
+  public enum Bot {
+    public static let donaldBotName: Swift.String
+    public static let donaldBotDescription: Swift.String
+    public static let rubyBotName: Swift.String
+    public static let rubyBotDescription: Swift.String
+  }
+  public enum Alert {
+  }
+  public enum ChatScreen {
+    public static let textViewPlaceholder: Swift.String
+  }
+  public enum PrivacyPolicyScreen {
+    public static let privacyPolicyControllerTitle: Swift.String
+    public static let privacyPolicyDoneButtonTitle: Swift.String
+  }
+  public enum Toast {
+  }
+  public enum ActionScreen {
+  }
+  public enum Footer {
+  }
+}
+public protocol ChatBotAnimatableViewFactory {
+  func makeChatBotAnimatableView() -> any ChatBot.ChatBotAnimatableView
+}
 public protocol NibLoadable : AnyObject {
   static var nib: UIKit.UINib { get }
 }
@@ -43,6 +70,10 @@ extension ChatBot.NibLoadable {
 extension ChatBot.NibLoadable where Self : UIKit.UIView {
   public static func loadFromNib() -> Self
 }
+public protocol ChatBotAnimatableView : UIKit.UIView {
+  func startAnimation()
+  func stopAnimation()
+}
 public struct ChatBotConfiguration {
-  public init(privacyPolicyUrl: Swift.String, authHeaderName: Swift.String, authHeaderValue: Swift.String, headerUserPremiumValue: Swift.String, requestStartUrl: Swift.String, requestHistoryUrl: Swift.String, requestSendMessageUrl: Swift.String, requestCheckOptInUrl: Swift.String, requestPostOptInUrl: Swift.String, requestClearHistoryUrl: Swift.String, userImage: UIKit.UIImage, byPassLimits: Swift.Bool, useLightTheme: Swift.Bool)
+  public init(privacyPolicyUrl: Swift.String, authHeaderName: Swift.String, authHeaderValue: Swift.String, headerUserPremiumValue: Swift.String, requestStartUrl: Swift.String, requestHistoryUrl: Swift.String, requestSendMessageUrl: Swift.String, requestCheckOptInUrl: Swift.String, requestPostOptInUrl: Swift.String, requestClearHistoryUrl: Swift.String, userImage: UIKit.UIImage, byPassLimits: Swift.Bool, useLightTheme: Swift.Bool, chatBotAnimatableViewFactory: any ChatBot.ChatBotAnimatableViewFactory)
 }

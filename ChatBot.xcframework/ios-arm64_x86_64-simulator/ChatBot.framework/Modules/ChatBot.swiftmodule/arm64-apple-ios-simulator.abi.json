@@ -937,13 +937,6 @@
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
             "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ViewTypeProtocol",
-            "printedName": "ViewTypeProtocol",
-            "usr": "s:6Lottie16ViewTypeProtocolP",
-            "mangledName": "$s6Lottie16ViewTypeProtocolP"
           }
         ]
       },
@@ -4914,13 +4907,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "ViewTypeProtocol",
-            "printedName": "ViewTypeProtocol",
-            "usr": "s:6Lottie16ViewTypeProtocolP",
-            "mangledName": "$s6Lottie16ViewTypeProtocolP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
@@ -5288,13 +5274,6 @@
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
             "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ViewTypeProtocol",
-            "printedName": "ViewTypeProtocol",
-            "usr": "s:6Lottie16ViewTypeProtocolP",
-            "mangledName": "$s6Lottie16ViewTypeProtocolP"
           },
           {
             "kind": "Conformance",
@@ -8196,13 +8175,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "ViewTypeProtocol",
-            "printedName": "ViewTypeProtocol",
-            "usr": "s:6Lottie16ViewTypeProtocolP",
-            "mangledName": "$s6Lottie16ViewTypeProtocolP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
@@ -8334,6 +8306,1402 @@
         "mangledName": "$s7ChatBot6LoggerC",
         "moduleName": "ChatBot",
         "isOpen": true
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ChatBot",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LocalizedStrings",
+        "printedName": "LocalizedStrings",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "SelectionScreen",
+            "printedName": "SelectionScreen",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "controllerTitle",
+                "printedName": "controllerTitle",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7ChatBot16LocalizedStringsO15SelectionScreenO15controllerTitleSSvpZ",
+                "mangledName": "$s7ChatBot16LocalizedStringsO15SelectionScreenO15controllerTitleSSvpZ",
+                "moduleName": "ChatBot",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7ChatBot16LocalizedStringsO15SelectionScreenO15controllerTitleSSvgZ",
+                    "mangledName": "$s7ChatBot16LocalizedStringsO15SelectionScreenO15controllerTitleSSvgZ",
+                    "moduleName": "ChatBot",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "collectionTitle",
+                "printedName": "collectionTitle",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7ChatBot16LocalizedStringsO15SelectionScreenO15collectionTitleSSvpZ",
+                "mangledName": "$s7ChatBot16LocalizedStringsO15SelectionScreenO15collectionTitleSSvpZ",
+                "moduleName": "ChatBot",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7ChatBot16LocalizedStringsO15SelectionScreenO15collectionTitleSSvgZ",
+                    "mangledName": "$s7ChatBot16LocalizedStringsO15SelectionScreenO15collectionTitleSSvgZ",
+                    "moduleName": "ChatBot",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "collectionDescription",
+                "printedName": "collectionDescription",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7ChatBot16LocalizedStringsO15SelectionScreenO21collectionDescriptionSSvpZ",
+                "mangledName": "$s7ChatBot16LocalizedStringsO15SelectionScreenO21collectionDescriptionSSvpZ",
+                "moduleName": "ChatBot",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7ChatBot16LocalizedStringsO15SelectionScreenO21collectionDescriptionSSvgZ",
+                    "mangledName": "$s7ChatBot16LocalizedStringsO15SelectionScreenO21collectionDescriptionSSvgZ",
+                    "moduleName": "ChatBot",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:7ChatBot16LocalizedStringsO15SelectionScreenO",
+            "mangledName": "$s7ChatBot16LocalizedStringsO15SelectionScreenO",
+            "moduleName": "ChatBot",
+            "declAttributes": [
+              "AccessControl"
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Bot",
+            "printedName": "Bot",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "donaldBotName",
+                "printedName": "donaldBotName",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7ChatBot16LocalizedStringsO0B0O06donaldB4NameSSvpZ",
+                "mangledName": "$s7ChatBot16LocalizedStringsO0B0O06donaldB4NameSSvpZ",
+                "moduleName": "ChatBot",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7ChatBot16LocalizedStringsO0B0O06donaldB4NameSSvgZ",
+                    "mangledName": "$s7ChatBot16LocalizedStringsO0B0O06donaldB4NameSSvgZ",
+                    "moduleName": "ChatBot",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "donaldBotDescription",
+                "printedName": "donaldBotDescription",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7ChatBot16LocalizedStringsO0B0O06donaldB11DescriptionSSvpZ",
+                "mangledName": "$s7ChatBot16LocalizedStringsO0B0O06donaldB11DescriptionSSvpZ",
+                "moduleName": "ChatBot",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7ChatBot16LocalizedStringsO0B0O06donaldB11DescriptionSSvgZ",
+                    "mangledName": "$s7ChatBot16LocalizedStringsO0B0O06donaldB11DescriptionSSvgZ",
+                    "moduleName": "ChatBot",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "rubyBotName",
+                "printedName": "rubyBotName",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7ChatBot16LocalizedStringsO0B0O04rubyB4NameSSvpZ",
+                "mangledName": "$s7ChatBot16LocalizedStringsO0B0O04rubyB4NameSSvpZ",
+                "moduleName": "ChatBot",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7ChatBot16LocalizedStringsO0B0O04rubyB4NameSSvgZ",
+                    "mangledName": "$s7ChatBot16LocalizedStringsO0B0O04rubyB4NameSSvgZ",
+                    "moduleName": "ChatBot",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "rubyBotDescription",
+                "printedName": "rubyBotDescription",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7ChatBot16LocalizedStringsO0B0O04rubyB11DescriptionSSvpZ",
+                "mangledName": "$s7ChatBot16LocalizedStringsO0B0O04rubyB11DescriptionSSvpZ",
+                "moduleName": "ChatBot",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7ChatBot16LocalizedStringsO0B0O04rubyB11DescriptionSSvgZ",
+                    "mangledName": "$s7ChatBot16LocalizedStringsO0B0O04rubyB11DescriptionSSvgZ",
+                    "moduleName": "ChatBot",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:7ChatBot16LocalizedStringsO0B0O",
+            "mangledName": "$s7ChatBot16LocalizedStringsO0B0O",
+            "moduleName": "ChatBot",
+            "declAttributes": [
+              "AccessControl"
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Alert",
+            "printedName": "Alert",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "privacyPolicyAlertTitle",
+                "printedName": "privacyPolicyAlertTitle",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7ChatBot16LocalizedStringsO5AlertO013privacyPolicyE5TitleSSvpZ",
+                "mangledName": "$s7ChatBot16LocalizedStringsO5AlertO013privacyPolicyE5TitleSSvpZ",
+                "moduleName": "ChatBot",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7ChatBot16LocalizedStringsO5AlertO013privacyPolicyE5TitleSSvgZ",
+                    "mangledName": "$s7ChatBot16LocalizedStringsO5AlertO013privacyPolicyE5TitleSSvgZ",
+                    "moduleName": "ChatBot",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "privacyPolicyAlertMessage",
+                "printedName": "privacyPolicyAlertMessage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7ChatBot16LocalizedStringsO5AlertO013privacyPolicyE7MessageSSvpZ",
+                "mangledName": "$s7ChatBot16LocalizedStringsO5AlertO013privacyPolicyE7MessageSSvpZ",
+                "moduleName": "ChatBot",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7ChatBot16LocalizedStringsO5AlertO013privacyPolicyE7MessageSSvgZ",
+                    "mangledName": "$s7ChatBot16LocalizedStringsO5AlertO013privacyPolicyE7MessageSSvgZ",
+                    "moduleName": "ChatBot",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "privacyPolicyAlertAgreeButtonTitle",
+                "printedName": "privacyPolicyAlertAgreeButtonTitle",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7ChatBot16LocalizedStringsO5AlertO013privacyPolicyE16AgreeButtonTitleSSvpZ",
+                "mangledName": "$s7ChatBot16LocalizedStringsO5AlertO013privacyPolicyE16AgreeButtonTitleSSvpZ",
+                "moduleName": "ChatBot",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7ChatBot16LocalizedStringsO5AlertO013privacyPolicyE16AgreeButtonTitleSSvgZ",
+                    "mangledName": "$s7ChatBot16LocalizedStringsO5AlertO013privacyPolicyE16AgreeButtonTitleSSvgZ",
+                    "moduleName": "ChatBot",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "privacyPolicyAlertRefuseButtonTitle",
+                "printedName": "privacyPolicyAlertRefuseButtonTitle",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7ChatBot16LocalizedStringsO5AlertO013privacyPolicyE17RefuseButtonTitleSSvpZ",
+                "mangledName": "$s7ChatBot16LocalizedStringsO5AlertO013privacyPolicyE17RefuseButtonTitleSSvpZ",
+                "moduleName": "ChatBot",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7ChatBot16LocalizedStringsO5AlertO013privacyPolicyE17RefuseButtonTitleSSvgZ",
+                    "mangledName": "$s7ChatBot16LocalizedStringsO5AlertO013privacyPolicyE17RefuseButtonTitleSSvgZ",
+                    "moduleName": "ChatBot",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "privacyPolicy",
+                "printedName": "privacyPolicy",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7ChatBot16LocalizedStringsO5AlertO13privacyPolicySSvpZ",
+                "mangledName": "$s7ChatBot16LocalizedStringsO5AlertO13privacyPolicySSvpZ",
+                "moduleName": "ChatBot",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7ChatBot16LocalizedStringsO5AlertO13privacyPolicySSvgZ",
+                    "mangledName": "$s7ChatBot16LocalizedStringsO5AlertO13privacyPolicySSvgZ",
+                    "moduleName": "ChatBot",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "clearChatAlertTitle",
+                "printedName": "clearChatAlertTitle",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7ChatBot16LocalizedStringsO5AlertO05clearaE5TitleSSvpZ",
+                "mangledName": "$s7ChatBot16LocalizedStringsO5AlertO05clearaE5TitleSSvpZ",
+                "moduleName": "ChatBot",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7ChatBot16LocalizedStringsO5AlertO05clearaE5TitleSSvgZ",
+                    "mangledName": "$s7ChatBot16LocalizedStringsO5AlertO05clearaE5TitleSSvgZ",
+                    "moduleName": "ChatBot",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "clearChatAlertMessage",
+                "printedName": "clearChatAlertMessage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7ChatBot16LocalizedStringsO5AlertO05clearaE7MessageSSvpZ",
+                "mangledName": "$s7ChatBot16LocalizedStringsO5AlertO05clearaE7MessageSSvpZ",
+                "moduleName": "ChatBot",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7ChatBot16LocalizedStringsO5AlertO05clearaE7MessageSSvgZ",
+                    "mangledName": "$s7ChatBot16LocalizedStringsO5AlertO05clearaE7MessageSSvgZ",
+                    "moduleName": "ChatBot",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "clearChatAlertAgreeButtonTitle",
+                "printedName": "clearChatAlertAgreeButtonTitle",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7ChatBot16LocalizedStringsO5AlertO05clearaE16AgreeButtonTitleSSvpZ",
+                "mangledName": "$s7ChatBot16LocalizedStringsO5AlertO05clearaE16AgreeButtonTitleSSvpZ",
+                "moduleName": "ChatBot",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7ChatBot16LocalizedStringsO5AlertO05clearaE16AgreeButtonTitleSSvgZ",
+                    "mangledName": "$s7ChatBot16LocalizedStringsO5AlertO05clearaE16AgreeButtonTitleSSvgZ",
+                    "moduleName": "ChatBot",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "clearChatAlertRefuseButtonTitle",
+                "printedName": "clearChatAlertRefuseButtonTitle",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7ChatBot16LocalizedStringsO5AlertO05clearaE17RefuseButtonTitleSSvpZ",
+                "mangledName": "$s7ChatBot16LocalizedStringsO5AlertO05clearaE17RefuseButtonTitleSSvpZ",
+                "moduleName": "ChatBot",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7ChatBot16LocalizedStringsO5AlertO05clearaE17RefuseButtonTitleSSvgZ",
+                    "mangledName": "$s7ChatBot16LocalizedStringsO5AlertO05clearaE17RefuseButtonTitleSSvgZ",
+                    "moduleName": "ChatBot",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:7ChatBot16LocalizedStringsO5AlertO",
+            "mangledName": "$s7ChatBot16LocalizedStringsO5AlertO",
+            "moduleName": "ChatBot",
+            "declAttributes": [
+              "AccessControl"
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "ChatScreen",
+            "printedName": "ChatScreen",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "textViewPlaceholder",
+                "printedName": "textViewPlaceholder",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7ChatBot16LocalizedStringsO0A6ScreenO19textViewPlaceholderSSvpZ",
+                "mangledName": "$s7ChatBot16LocalizedStringsO0A6ScreenO19textViewPlaceholderSSvpZ",
+                "moduleName": "ChatBot",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7ChatBot16LocalizedStringsO0A6ScreenO19textViewPlaceholderSSvgZ",
+                    "mangledName": "$s7ChatBot16LocalizedStringsO0A6ScreenO19textViewPlaceholderSSvgZ",
+                    "moduleName": "ChatBot",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:7ChatBot16LocalizedStringsO0A6ScreenO",
+            "mangledName": "$s7ChatBot16LocalizedStringsO0A6ScreenO",
+            "moduleName": "ChatBot",
+            "declAttributes": [
+              "AccessControl"
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "PrivacyPolicyScreen",
+            "printedName": "PrivacyPolicyScreen",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "privacyPolicyControllerTitle",
+                "printedName": "privacyPolicyControllerTitle",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7ChatBot16LocalizedStringsO19PrivacyPolicyScreenO07privacyF15ControllerTitleSSvpZ",
+                "mangledName": "$s7ChatBot16LocalizedStringsO19PrivacyPolicyScreenO07privacyF15ControllerTitleSSvpZ",
+                "moduleName": "ChatBot",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7ChatBot16LocalizedStringsO19PrivacyPolicyScreenO07privacyF15ControllerTitleSSvgZ",
+                    "mangledName": "$s7ChatBot16LocalizedStringsO19PrivacyPolicyScreenO07privacyF15ControllerTitleSSvgZ",
+                    "moduleName": "ChatBot",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "privacyPolicyDoneButtonTitle",
+                "printedName": "privacyPolicyDoneButtonTitle",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7ChatBot16LocalizedStringsO19PrivacyPolicyScreenO07privacyF15DoneButtonTitleSSvpZ",
+                "mangledName": "$s7ChatBot16LocalizedStringsO19PrivacyPolicyScreenO07privacyF15DoneButtonTitleSSvpZ",
+                "moduleName": "ChatBot",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7ChatBot16LocalizedStringsO19PrivacyPolicyScreenO07privacyF15DoneButtonTitleSSvgZ",
+                    "mangledName": "$s7ChatBot16LocalizedStringsO19PrivacyPolicyScreenO07privacyF15DoneButtonTitleSSvgZ",
+                    "moduleName": "ChatBot",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:7ChatBot16LocalizedStringsO19PrivacyPolicyScreenO",
+            "mangledName": "$s7ChatBot16LocalizedStringsO19PrivacyPolicyScreenO",
+            "moduleName": "ChatBot",
+            "declAttributes": [
+              "AccessControl"
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Toast",
+            "printedName": "Toast",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "copyTextToast",
+                "printedName": "copyTextToast",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7ChatBot16LocalizedStringsO5ToastO08copyTextE0SSvpZ",
+                "mangledName": "$s7ChatBot16LocalizedStringsO5ToastO08copyTextE0SSvpZ",
+                "moduleName": "ChatBot",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7ChatBot16LocalizedStringsO5ToastO08copyTextE0SSvgZ",
+                    "mangledName": "$s7ChatBot16LocalizedStringsO5ToastO08copyTextE0SSvgZ",
+                    "moduleName": "ChatBot",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:7ChatBot16LocalizedStringsO5ToastO",
+            "mangledName": "$s7ChatBot16LocalizedStringsO5ToastO",
+            "moduleName": "ChatBot",
+            "declAttributes": [
+              "AccessControl"
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "ActionScreen",
+            "printedName": "ActionScreen",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "regenerateAction",
+                "printedName": "regenerateAction",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7ChatBot16LocalizedStringsO12ActionScreenO010regenerateE0SSvpZ",
+                "mangledName": "$s7ChatBot16LocalizedStringsO12ActionScreenO010regenerateE0SSvpZ",
+                "moduleName": "ChatBot",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7ChatBot16LocalizedStringsO12ActionScreenO010regenerateE0SSvgZ",
+                    "mangledName": "$s7ChatBot16LocalizedStringsO12ActionScreenO010regenerateE0SSvgZ",
+                    "moduleName": "ChatBot",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "goodResponseAction",
+                "printedName": "goodResponseAction",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7ChatBot16LocalizedStringsO12ActionScreenO012goodResponseE0SSvpZ",
+                "mangledName": "$s7ChatBot16LocalizedStringsO12ActionScreenO012goodResponseE0SSvpZ",
+                "moduleName": "ChatBot",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7ChatBot16LocalizedStringsO12ActionScreenO012goodResponseE0SSvgZ",
+                    "mangledName": "$s7ChatBot16LocalizedStringsO12ActionScreenO012goodResponseE0SSvgZ",
+                    "moduleName": "ChatBot",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "badResponseAction",
+                "printedName": "badResponseAction",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7ChatBot16LocalizedStringsO12ActionScreenO011badResponseE0SSvpZ",
+                "mangledName": "$s7ChatBot16LocalizedStringsO12ActionScreenO011badResponseE0SSvpZ",
+                "moduleName": "ChatBot",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7ChatBot16LocalizedStringsO12ActionScreenO011badResponseE0SSvgZ",
+                    "mangledName": "$s7ChatBot16LocalizedStringsO12ActionScreenO011badResponseE0SSvgZ",
+                    "moduleName": "ChatBot",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "copyAction",
+                "printedName": "copyAction",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7ChatBot16LocalizedStringsO12ActionScreenO04copyE0SSvpZ",
+                "mangledName": "$s7ChatBot16LocalizedStringsO12ActionScreenO04copyE0SSvpZ",
+                "moduleName": "ChatBot",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7ChatBot16LocalizedStringsO12ActionScreenO04copyE0SSvgZ",
+                    "mangledName": "$s7ChatBot16LocalizedStringsO12ActionScreenO04copyE0SSvgZ",
+                    "moduleName": "ChatBot",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:7ChatBot16LocalizedStringsO12ActionScreenO",
+            "mangledName": "$s7ChatBot16LocalizedStringsO12ActionScreenO",
+            "moduleName": "ChatBot",
+            "declAttributes": [
+              "AccessControl"
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Footer",
+            "printedName": "Footer",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "limitLabelTitle",
+                "printedName": "limitLabelTitle",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7ChatBot16LocalizedStringsO6FooterO15limitLabelTitleSSvpZ",
+                "mangledName": "$s7ChatBot16LocalizedStringsO6FooterO15limitLabelTitleSSvpZ",
+                "moduleName": "ChatBot",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7ChatBot16LocalizedStringsO6FooterO15limitLabelTitleSSvgZ",
+                    "mangledName": "$s7ChatBot16LocalizedStringsO6FooterO15limitLabelTitleSSvgZ",
+                    "moduleName": "ChatBot",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "getMoreButtonTitle",
+                "printedName": "getMoreButtonTitle",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7ChatBot16LocalizedStringsO6FooterO18getMoreButtonTitleSSvpZ",
+                "mangledName": "$s7ChatBot16LocalizedStringsO6FooterO18getMoreButtonTitleSSvpZ",
+                "moduleName": "ChatBot",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7ChatBot16LocalizedStringsO6FooterO18getMoreButtonTitleSSvgZ",
+                    "mangledName": "$s7ChatBot16LocalizedStringsO6FooterO18getMoreButtonTitleSSvgZ",
+                    "moduleName": "ChatBot",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:7ChatBot16LocalizedStringsO6FooterO",
+            "mangledName": "$s7ChatBot16LocalizedStringsO6FooterO",
+            "moduleName": "ChatBot",
+            "declAttributes": [
+              "AccessControl"
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:7ChatBot16LocalizedStringsO",
+        "mangledName": "$s7ChatBot16LocalizedStringsO",
+        "moduleName": "ChatBot",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -9061,13 +10429,6 @@
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
             "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ViewTypeProtocol",
-            "printedName": "ViewTypeProtocol",
-            "usr": "s:6Lottie16ViewTypeProtocolP",
-            "mangledName": "$s6Lottie16ViewTypeProtocolP"
           },
           {
             "kind": "Conformance",
@@ -10013,6 +11374,52 @@
         "mangledName": "$s7ChatBot0aB19SelectionInteractorC",
         "moduleName": "ChatBot",
         "isOpen": true
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ChatBot",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ChatBotAnimatableViewFactory",
+        "printedName": "ChatBotAnimatableViewFactory",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "makeChatBotAnimatableView",
+            "printedName": "makeChatBotAnimatableView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ChatBotAnimatableView",
+                "printedName": "ChatBot.ChatBotAnimatableView",
+                "usr": "s:7ChatBot0aB14AnimatableViewP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7ChatBot0aB21AnimatableViewFactoryP04makeabcD0AA0abcD0_pyF",
+            "mangledName": "$s7ChatBot0aB21AnimatableViewFactoryP04makeabcD0AA0abcD0_pyF",
+            "moduleName": "ChatBot",
+            "genericSig": "<τ_0_0 where τ_0_0 : ChatBot.ChatBotAnimatableViewFactory>",
+            "sugared_genericSig": "<Self where Self : ChatBot.ChatBotAnimatableViewFactory>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:7ChatBot0aB21AnimatableViewFactoryP",
+        "mangledName": "$s7ChatBot0aB21AnimatableViewFactoryP",
+        "moduleName": "ChatBot",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -22110,13 +23517,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "ViewTypeProtocol",
-            "printedName": "ViewTypeProtocol",
-            "usr": "s:6Lottie16ViewTypeProtocolP",
-            "mangledName": "$s6Lottie16ViewTypeProtocolP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
@@ -22828,18 +24228,79 @@
           },
           {
             "kind": "Conformance",
-            "name": "ViewTypeProtocol",
-            "printedName": "ViewTypeProtocol",
-            "usr": "s:6Lottie16ViewTypeProtocolP",
-            "mangledName": "$s6Lottie16ViewTypeProtocolP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ChatBot",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ChatBotAnimatableView",
+        "printedName": "ChatBotAnimatableView",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "startAnimation",
+            "printedName": "startAnimation()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7ChatBot0aB14AnimatableViewP14startAnimationyyF",
+            "mangledName": "$s7ChatBot0aB14AnimatableViewP14startAnimationyyF",
+            "moduleName": "ChatBot",
+            "genericSig": "<τ_0_0 where τ_0_0 : ChatBot.ChatBotAnimatableView>",
+            "sugared_genericSig": "<Self where Self : ChatBot.ChatBotAnimatableView>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopAnimation",
+            "printedName": "stopAnimation()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7ChatBot0aB14AnimatableViewP13stopAnimationyyF",
+            "mangledName": "$s7ChatBot0aB14AnimatableViewP13stopAnimationyyF",
+            "moduleName": "ChatBot",
+            "genericSig": "<τ_0_0 where τ_0_0 : ChatBot.ChatBotAnimatableView>",
+            "sugared_genericSig": "<Self where Self : ChatBot.ChatBotAnimatableView>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:7ChatBot0aB14AnimatableViewP",
+        "mangledName": "$s7ChatBot0aB14AnimatableViewP",
+        "moduleName": "ChatBot",
+        "genericSig": "<τ_0_0 : UIKit.UIView>",
+        "sugared_genericSig": "<Self : UIKit.UIView>",
+        "declAttributes": [
+          "AccessControl"
         ]
       },
       {
@@ -23825,9 +25286,52 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "chatBotAnimatableViewFactory",
+            "printedName": "chatBotAnimatableViewFactory",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ChatBotAnimatableViewFactory",
+                "printedName": "ChatBot.ChatBotAnimatableViewFactory",
+                "usr": "s:7ChatBot0aB21AnimatableViewFactoryP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7ChatBot0aB13ConfigurationV04chatB21AnimatableViewFactoryAA0abefG0_pvp",
+            "mangledName": "$s7ChatBot0aB13ConfigurationV04chatB21AnimatableViewFactoryAA0abefG0_pvp",
+            "moduleName": "ChatBot",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatBotAnimatableViewFactory",
+                    "printedName": "ChatBot.ChatBotAnimatableViewFactory",
+                    "usr": "s:7ChatBot0aB21AnimatableViewFactoryP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7ChatBot0aB13ConfigurationV04chatB21AnimatableViewFactoryAA0abefG0_pvg",
+                "mangledName": "$s7ChatBot0aB13ConfigurationV04chatB21AnimatableViewFactoryAA0abefG0_pvg",
+                "moduleName": "ChatBot",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(privacyPolicyUrl:authHeaderName:authHeaderValue:headerUserPremiumValue:requestStartUrl:requestHistoryUrl:requestSendMessageUrl:requestCheckOptInUrl:requestPostOptInUrl:requestClearHistoryUrl:userImage:byPassLimits:useLightTheme:)",
+            "printedName": "init(privacyPolicyUrl:authHeaderName:authHeaderValue:headerUserPremiumValue:requestStartUrl:requestHistoryUrl:requestSendMessageUrl:requestCheckOptInUrl:requestPostOptInUrl:requestClearHistoryUrl:userImage:byPassLimits:useLightTheme:chatBotAnimatableViewFactory:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -23912,11 +25416,17 @@
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ChatBotAnimatableViewFactory",
+                "printedName": "ChatBot.ChatBotAnimatableViewFactory",
+                "usr": "s:7ChatBot0aB21AnimatableViewFactoryP"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:7ChatBot0aB13ConfigurationV16privacyPolicyUrl14authHeaderName0gH5Value017headerUserPremiumJ0012requestStartF00n7HistoryF00n11SendMessageF00n10CheckOptInF00n4PosttuF00n5ClearpF09userImage12byPassLimits13useLightThemeACSS_S9SSo7UIImageCS2btcfc",
-            "mangledName": "$s7ChatBot0aB13ConfigurationV16privacyPolicyUrl14authHeaderName0gH5Value017headerUserPremiumJ0012requestStartF00n7HistoryF00n11SendMessageF00n10CheckOptInF00n4PosttuF00n5ClearpF09userImage12byPassLimits13useLightThemeACSS_S9SSo7UIImageCS2btcfc",
+            "usr": "s:7ChatBot0aB13ConfigurationV16privacyPolicyUrl14authHeaderName0gH5Value017headerUserPremiumJ0012requestStartF00n7HistoryF00n11SendMessageF00n10CheckOptInF00n4PosttuF00n5ClearpF09userImage12byPassLimits13useLightTheme04chatB21AnimatableViewFactoryACSS_S9SSo7UIImageCS2bAA0aB21AnimatableViewFactory_ptcfc",
+            "mangledName": "$s7ChatBot0aB13ConfigurationV16privacyPolicyUrl14authHeaderName0gH5Value017headerUserPremiumJ0012requestStartF00n7HistoryF00n11SendMessageF00n10CheckOptInF00n4PosttuF00n5ClearpF09userImage12byPassLimits13useLightTheme04chatB21AnimatableViewFactoryACSS_S9SSo7UIImageCS2bAA0aB21AnimatableViewFactory_ptcfc",
             "moduleName": "ChatBot",
             "declAttributes": [
               "AccessControl"
@@ -30456,31 +31966,24 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "Lottie",
-        "printedName": "Lottie",
-        "declKind": "Import",
-        "moduleName": "ChatBot"
-      },
-      {
         "kind": "TypeDecl",
         "name": "ChatBotHistoryCell",
         "printedName": "ChatBotHistoryCell",
         "children": [
           {
             "kind": "Var",
-            "name": "messageLoadingAnimationView",
-            "printedName": "messageLoadingAnimationView",
+            "name": "messageLoadingAnimationContainerView",
+            "printedName": "messageLoadingAnimationContainerView",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "WeakStorage",
-                "printedName": "Lottie.LottieAnimationView?"
+                "printedName": "UIKit.UIView?"
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@ChatBot@objc(cs)ChatBotHistoryCell(py)messageLoadingAnimationView",
-            "mangledName": "$s7ChatBot0aB11HistoryCellC27messageLoadingAnimationView6Lottie0igH0CSgvp",
+            "usr": "c:@M@ChatBot@objc(cs)ChatBotHistoryCell(py)messageLoadingAnimationContainerView",
+            "mangledName": "$s7ChatBot0aB11HistoryCellC36messageLoadingAnimationContainerViewSo6UIViewCSgvp",
             "moduleName": "ChatBot",
             "isOpen": true,
             "declAttributes": [
@@ -30503,21 +32006,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "ImplicitlyUnwrappedOptional",
-                    "printedName": "Lottie.LottieAnimationView?",
+                    "printedName": "UIKit.UIView?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "LottieAnimationView",
-                        "printedName": "Lottie.LottieAnimationView",
-                        "usr": "c:@M@Lottie@objc(cs)LottieAnimationView"
+                        "name": "UIView",
+                        "printedName": "UIKit.UIView",
+                        "usr": "c:objc(cs)UIView"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@ChatBot@objc(cs)ChatBotHistoryCell(im)messageLoadingAnimationView",
-                "mangledName": "$s7ChatBot0aB11HistoryCellC27messageLoadingAnimationView6Lottie0igH0CSgvg",
+                "usr": "c:@M@ChatBot@objc(cs)ChatBotHistoryCell(im)messageLoadingAnimationContainerView",
+                "mangledName": "$s7ChatBot0aB11HistoryCellC36messageLoadingAnimationContainerViewSo6UIViewCSgvg",
                 "moduleName": "ChatBot",
                 "implicit": true,
                 "isOpen": true,
@@ -30539,21 +32042,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "ImplicitlyUnwrappedOptional",
-                    "printedName": "Lottie.LottieAnimationView?",
+                    "printedName": "UIKit.UIView?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "LottieAnimationView",
-                        "printedName": "Lottie.LottieAnimationView",
-                        "usr": "c:@M@Lottie@objc(cs)LottieAnimationView"
+                        "name": "UIView",
+                        "printedName": "UIKit.UIView",
+                        "usr": "c:objc(cs)UIView"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@ChatBot@objc(cs)ChatBotHistoryCell(im)setMessageLoadingAnimationView:",
-                "mangledName": "$s7ChatBot0aB11HistoryCellC27messageLoadingAnimationView6Lottie0igH0CSgvs",
+                "usr": "c:@M@ChatBot@objc(cs)ChatBotHistoryCell(im)setMessageLoadingAnimationContainerView:",
+                "mangledName": "$s7ChatBot0aB11HistoryCellC36messageLoadingAnimationContainerViewSo6UIViewCSgvs",
                 "moduleName": "ChatBot",
                 "implicit": true,
                 "isOpen": true,
@@ -30574,8 +32077,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7ChatBot0aB11HistoryCellC27messageLoadingAnimationView6Lottie0igH0CSgvM",
-                "mangledName": "$s7ChatBot0aB11HistoryCellC27messageLoadingAnimationView6Lottie0igH0CSgvM",
+                "usr": "s:7ChatBot0aB11HistoryCellC36messageLoadingAnimationContainerViewSo6UIViewCSgvM",
+                "mangledName": "$s7ChatBot0aB11HistoryCellC36messageLoadingAnimationContainerViewSo6UIViewCSgvM",
                 "moduleName": "ChatBot",
                 "implicit": true,
                 "isOpen": true,
@@ -31861,6 +33364,121 @@
           },
           {
             "kind": "Var",
+            "name": "messageLoadingAnimationView",
+            "printedName": "messageLoadingAnimationView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ChatBot.ChatBotAnimatableView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatBotAnimatableView",
+                    "printedName": "ChatBot.ChatBotAnimatableView",
+                    "usr": "s:7ChatBot0aB14AnimatableViewP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7ChatBot0aB11HistoryCellC27messageLoadingAnimationViewAA0ab10AnimatableH0_pSgvp",
+            "mangledName": "$s7ChatBot0aB11HistoryCellC27messageLoadingAnimationViewAA0ab10AnimatableH0_pSgvp",
+            "moduleName": "ChatBot",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Custom",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 12,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ChatBot.ChatBotAnimatableView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatBotAnimatableView",
+                        "printedName": "ChatBot.ChatBotAnimatableView",
+                        "usr": "s:7ChatBot0aB14AnimatableViewP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7ChatBot0aB11HistoryCellC27messageLoadingAnimationViewAA0ab10AnimatableH0_pSgvg",
+                "mangledName": "$s7ChatBot0aB11HistoryCellC27messageLoadingAnimationViewAA0ab10AnimatableH0_pSgvg",
+                "moduleName": "ChatBot",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ChatBot.ChatBotAnimatableView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ChatBotAnimatableView",
+                        "printedName": "ChatBot.ChatBotAnimatableView",
+                        "usr": "s:7ChatBot0aB14AnimatableViewP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7ChatBot0aB11HistoryCellC27messageLoadingAnimationViewAA0ab10AnimatableH0_pSgvs",
+                "mangledName": "$s7ChatBot0aB11HistoryCellC27messageLoadingAnimationViewAA0ab10AnimatableH0_pSgvs",
+                "moduleName": "ChatBot",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7ChatBot0aB11HistoryCellC27messageLoadingAnimationViewAA0ab10AnimatableH0_pSgvM",
+                "mangledName": "$s7ChatBot0aB11HistoryCellC27messageLoadingAnimationViewAA0ab10AnimatableH0_pSgvM",
+                "moduleName": "ChatBot",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "longPressAction",
             "printedName": "longPressAction",
             "children": [
@@ -31900,7 +33518,7 @@
               "HasInitialValue",
               "HasStorage"
             ],
-            "fixedbinaryorder": 12,
+            "fixedbinaryorder": 13,
             "hasStorage": true,
             "accessors": [
               {
@@ -32048,7 +33666,7 @@
               "HasInitialValue",
               "HasStorage"
             ],
-            "fixedbinaryorder": 13,
+            "fixedbinaryorder": 14,
             "hasStorage": true,
             "accessors": [
               {
@@ -32181,11 +33799,11 @@
             "moduleName": "ChatBot",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Custom",
               "HasStorage"
             ],
-            "fixedbinaryorder": 14,
+            "fixedbinaryorder": 15,
             "hasStorage": true,
             "accessors": [
               {
@@ -32300,7 +33918,7 @@
               "Custom",
               "HasStorage"
             ],
-            "fixedbinaryorder": 15,
+            "fixedbinaryorder": 16,
             "hasStorage": true,
             "accessors": [
               {
@@ -32408,7 +34026,7 @@
               "HasStorage",
               "AccessControl"
             ],
-            "fixedbinaryorder": 16,
+            "fixedbinaryorder": 17,
             "hasStorage": true
           },
           {
@@ -32722,13 +34340,6 @@
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
             "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ViewTypeProtocol",
-            "printedName": "ViewTypeProtocol",
-            "usr": "s:6Lottie16ViewTypeProtocolP",
-            "mangledName": "$s6Lottie16ViewTypeProtocolP"
           },
           {
             "kind": "Conformance",
@@ -37459,6 +39070,370 @@
       "value": "\"\""
     },
     {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 219,
+      "length": 34,
+      "value": "\"ChatBot.selectionControllerTitle\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 264,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 319,
+      "length": 34,
+      "value": "\"ChatBot.selectionCollectionTitle\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 364,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 425,
+      "length": 40,
+      "value": "\"ChatBot.selectionCollectionDescription\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 476,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 563,
+      "length": 23,
+      "value": "\"ChatBot.donaldBotName\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 597,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 664,
+      "length": 30,
+      "value": "\"ChatBot.donaldBotDescription\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 705,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 763,
+      "length": 21,
+      "value": "\"ChatBot.rubyBotName\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 795,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 860,
+      "length": 28,
+      "value": "\"ChatBot.rubyBotDescription\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 899,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 991,
+      "length": 33,
+      "value": "\"ChatBot.privacyPolicyAlertTitle\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 1035,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 1100,
+      "length": 35,
+      "value": "\"ChatBot.privacyPolicyAlertMessage\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 1146,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 1220,
+      "length": 44,
+      "value": "\"ChatBot.privacyPolicyAlertAgreeButtonTitle\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 1275,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 1350,
+      "length": 45,
+      "value": "\"ChatBot.privacyPolicyAlertRefuseButtonTitle\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 1406,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 1464,
+      "length": 23,
+      "value": "\"ChatBot.privacyPolicy\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 1498,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 1562,
+      "length": 29,
+      "value": "\"ChatBot.clearChatAlertTitle\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 1602,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 1663,
+      "length": 31,
+      "value": "\"ChatBot.clearChatAlertMessage\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 1705,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 1775,
+      "length": 40,
+      "value": "\"ChatBot.clearChatAlertAgreeButtonTitle\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 1826,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 1897,
+      "length": 41,
+      "value": "\"ChatBot.clearChatAlertRefuseButtonTitle\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 1949,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 2049,
+      "length": 33,
+      "value": "\"ChatBot.chatTextViewPlaceholder\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 2093,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 2211,
+      "length": 38,
+      "value": "\"ChatBot.privacyPolicyControllerTitle\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 2260,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 2335,
+      "length": 38,
+      "value": "\"ChatBot.privacyPolicyDoneButtonTitle\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 2384,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 2466,
+      "length": 23,
+      "value": "\"ChatBot.copyTextToast\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 2500,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 2592,
+      "length": 26,
+      "value": "\"ChatBot.regenerateAction\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 2629,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 2687,
+      "length": 28,
+      "value": "\"ChatBot.goodResponseAction\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 2726,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 2783,
+      "length": 27,
+      "value": "\"ChatBot.badResponseAction\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 2821,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 2871,
+      "length": 20,
+      "value": "\"ChatBot.copyAction\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 2902,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 2987,
+      "length": 25,
+      "value": "\"ChatBot.limitLabelTitle\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 3023,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 3081,
+      "length": 28,
+      "value": "\"ChatBot.getMoreButtonTitle\""
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Localizations\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 3120,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Services\/ChatBotAPI.swift",
       "kind": "StringLiteral",
       "offset": 1016,
@@ -37629,37 +39604,9 @@
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Controllers\/Selection\/ChatBotSelectionCollectionHandler.swift",
       "kind": "StringLiteral",
-      "offset": 521,
-      "length": 8,
-      "value": "\"Donald\""
-    },
-    {
-      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Controllers\/Selection\/ChatBotSelectionCollectionHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 550,
-      "length": 64,
-      "value": "\"Virtual buddy, always ready to listen, chat, and share a laugh\""
-    },
-    {
-      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Controllers\/Selection\/ChatBotSelectionCollectionHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 626,
+      "offset": 629,
       "length": 14,
       "value": "\"friend_panda\""
-    },
-    {
-      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Controllers\/Selection\/ChatBotSelectionCollectionHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 721,
-      "length": 6,
-      "value": "\"Ruby\""
-    },
-    {
-      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Controllers\/Selection\/ChatBotSelectionCollectionHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 748,
-      "length": 68,
-      "value": "\"Reliable companion ready to tackle any questions you throw his way\""
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Controllers\/Selection\/ChatBotSelectionCollectionHandler.swift",
@@ -37707,701 +39654,708 @@
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
       "offset": 320,
-      "length": 5,
-      "value": "0.792"
+      "length": 4,
+      "value": "0.79"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 334,
-      "length": 5,
-      "value": "0.792"
+      "offset": 333,
+      "length": 4,
+      "value": "0.79"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 347,
-      "length": 5,
-      "value": "0.792"
+      "offset": 345,
+      "length": 4,
+      "value": "0.79"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 361,
+      "offset": 358,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 430,
+      "offset": 427,
       "length": 3,
       "value": "0.4"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 442,
+      "offset": 439,
       "length": 3,
       "value": "0.4"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 453,
+      "offset": 450,
       "length": 3,
       "value": "0.4"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 465,
+      "offset": 462,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 520,
+      "offset": 517,
       "length": 4,
       "value": "0.15"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 533,
+      "offset": 530,
       "length": 4,
       "value": "0.15"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 545,
+      "offset": 542,
       "length": 4,
       "value": "0.15"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 558,
+      "offset": 555,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 676,
+      "offset": 673,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 688,
+      "offset": 685,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 699,
+      "offset": 696,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "IntegerLiteral",
-      "offset": 711,
+      "offset": 708,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 774,
+      "offset": 771,
       "length": 4,
       "value": "0.89"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 787,
+      "offset": 784,
       "length": 4,
       "value": "0.89"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 799,
+      "offset": 796,
       "length": 4,
       "value": "0.89"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "IntegerLiteral",
-      "offset": 812,
+      "offset": 809,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 870,
+      "offset": 867,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 882,
+      "offset": 879,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 893,
+      "offset": 890,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "IntegerLiteral",
-      "offset": 905,
+      "offset": 902,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 964,
+      "offset": 961,
       "length": 4,
       "value": "0.95"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 977,
+      "offset": 974,
       "length": 4,
       "value": "0.95"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 989,
+      "offset": 986,
       "length": 4,
       "value": "0.96"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "IntegerLiteral",
-      "offset": 1002,
+      "offset": 999,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 1063,
+      "offset": 1060,
       "length": 4,
       "value": "0.27"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 1076,
+      "offset": 1073,
       "length": 4,
       "value": "0.27"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 1088,
+      "offset": 1085,
       "length": 4,
       "value": "0.27"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "IntegerLiteral",
-      "offset": 1101,
+      "offset": 1098,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 1217,
+      "offset": 1214,
       "length": 4,
       "value": "0.01"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 1230,
+      "offset": 1227,
       "length": 4,
       "value": "0.15"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 1242,
+      "offset": 1239,
       "length": 4,
       "value": "0.29"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "IntegerLiteral",
-      "offset": 1255,
+      "offset": 1252,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 1310,
+      "offset": 1307,
       "length": 4,
       "value": "0.92"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 1323,
+      "offset": 1320,
       "length": 4,
       "value": "0.96"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "IntegerLiteral",
-      "offset": 1335,
+      "offset": 1332,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "IntegerLiteral",
-      "offset": 1345,
+      "offset": 1342,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 1395,
+      "offset": 1392,
       "length": 4,
       "value": "0.03"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 1408,
+      "offset": 1405,
       "length": 4,
       "value": "0.35"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 1420,
+      "offset": 1417,
       "length": 4,
       "value": "0.68"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "IntegerLiteral",
-      "offset": 1433,
+      "offset": 1430,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 1484,
+      "offset": 1481,
       "length": 4,
       "value": "0.32"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 1497,
+      "offset": 1494,
       "length": 4,
       "value": "0.65"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "IntegerLiteral",
-      "offset": 1509,
+      "offset": 1506,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "IntegerLiteral",
-      "offset": 1519,
+      "offset": 1516,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 1565,
+      "offset": 1562,
       "length": 5,
       "value": "0.588"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 1579,
+      "offset": 1576,
       "length": 5,
       "value": "0.588"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 1592,
+      "offset": 1589,
       "length": 5,
       "value": "0.588"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 1606,
+      "offset": 1603,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 1680,
+      "offset": 1677,
       "length": 5,
       "value": "0.075"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 1694,
+      "offset": 1691,
       "length": 5,
       "value": "0.075"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 1707,
+      "offset": 1704,
       "length": 5,
       "value": "0.075"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "IntegerLiteral",
-      "offset": 1721,
+      "offset": 1718,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 1775,
+      "offset": 1772,
       "length": 5,
       "value": "0.937"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 1789,
+      "offset": 1786,
       "length": 5,
       "value": "0.937"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 1802,
+      "offset": 1799,
       "length": 5,
       "value": "0.937"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "IntegerLiteral",
-      "offset": 1816,
+      "offset": 1813,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 1864,
+      "offset": 1861,
       "length": 4,
       "value": "0.15"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 1877,
+      "offset": 1874,
       "length": 4,
       "value": "0.15"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 1889,
+      "offset": 1886,
       "length": 4,
       "value": "0.15"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "IntegerLiteral",
-      "offset": 1902,
+      "offset": 1899,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 2013,
+      "offset": 2010,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 2025,
+      "offset": 2022,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 2036,
+      "offset": 2033,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "IntegerLiteral",
-      "offset": 2048,
+      "offset": 2045,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 2106,
+      "offset": 2103,
       "length": 5,
       "value": "0.953"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 2120,
+      "offset": 2117,
       "length": 5,
       "value": "0.953"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 2133,
+      "offset": 2130,
       "length": 5,
       "value": "0.957"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "IntegerLiteral",
-      "offset": 2147,
+      "offset": 2144,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 2199,
+      "offset": 2196,
       "length": 5,
       "value": "0.278"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 2213,
+      "offset": 2210,
       "length": 5,
       "value": "0.020"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 2226,
+      "offset": 2223,
       "length": 5,
       "value": "0.020"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "IntegerLiteral",
-      "offset": 2240,
+      "offset": 2237,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 2293,
+      "offset": 2290,
       "length": 5,
       "value": "0.988"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 2307,
+      "offset": 2304,
       "length": 5,
       "value": "0.925"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 2320,
+      "offset": 2317,
       "length": 5,
       "value": "0.922"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "IntegerLiteral",
-      "offset": 2334,
+      "offset": 2331,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 2403,
+      "offset": 2400,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 2415,
+      "offset": 2412,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 2426,
+      "offset": 2423,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "IntegerLiteral",
-      "offset": 2438,
+      "offset": 2435,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 2490,
-      "length": 5,
-      "value": "0.980"
+      "offset": 2487,
+      "length": 4,
+      "value": "0.98"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 2504,
-      "length": 5,
-      "value": "0.980"
+      "offset": 2500,
+      "length": 4,
+      "value": "0.98"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 2517,
-      "length": 5,
-      "value": "0.980"
+      "offset": 2512,
+      "length": 4,
+      "value": "0.98"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "IntegerLiteral",
-      "offset": 2531,
+      "offset": 2525,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 2593,
+      "offset": 2587,
       "length": 5,
       "value": "0.694"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 2607,
+      "offset": 2601,
       "length": 5,
       "value": "0.694"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 2620,
+      "offset": 2614,
       "length": 5,
       "value": "0.694"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "IntegerLiteral",
-      "offset": 2634,
+      "offset": 2628,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 2697,
+      "offset": 2691,
       "length": 5,
       "value": "0.498"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 2711,
+      "offset": 2705,
       "length": 5,
       "value": "0.498"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 2724,
+      "offset": 2718,
       "length": 5,
       "value": "0.498"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "IntegerLiteral",
-      "offset": 2738,
+      "offset": 2732,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "IntegerLiteral",
-      "offset": 2782,
+      "offset": 2776,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "FloatLiteral",
-      "offset": 2792,
+      "offset": 2786,
       "length": 4,
       "value": "0.48"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "IntegerLiteral",
-      "offset": 2804,
+      "offset": 2798,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/ChatBotColors\/ChatBotColors.swift",
       "kind": "IntegerLiteral",
-      "offset": 2814,
+      "offset": 2808,
       "length": 1,
       "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Controllers\/Chat\/ChatBotHistoryCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1118,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Library\/Developer\/Xcode\/DerivedData\/GettrModules-ehrlbqdbpynbptbmflhiezhfpjiy\/Build\/Intermediates.noindex\/ChatBot.build\/Debug-iphonesimulator\/ChatBot.build\/DerivedSources\/GeneratedAssetSymbols.swift",

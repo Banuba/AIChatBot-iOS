@@ -14,7 +14,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		PqG9I0b6UsmCUbOjPBNfT0TyTG8=
+		ZPYzoLwVb5DACyVUOXPIAakUMlg=
 		</data>
 		<key>BannerView.nib</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>ChatBotHistoryCell.nib</key>
 		<data>
-		PENAKdBN3H6YjJJ+bHq+hM5Bz9E=
+		1ReLztyQv36oqjnRtnB9HqAxzRw=
 		</data>
 		<key>ChatBotHistoryViewController.storyboardc/ChatBotHistoryViewController.nib</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Headers/ChatBot-Swift.h</key>
 		<data>
-		uks5SOlry0tIxXQLBH+7cQumyH8=
+		WzdAxdpfjRyZLpVYjxFdxUYTErM=
 		</data>
 		<key>Headers/ChatBot.h</key>
 		<data>
@@ -78,15 +78,19 @@
 		</data>
 		<key>Modules/ChatBot.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		JUbCNtsbiijUYV229AhspoQgUvk=
+		8X/ralmWfm8v3/wYGnyvj3HbtUE=
+		</data>
+		<key>Modules/ChatBot.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<data>
+		52XmdvuE5VQlxm/zvcaqpX2ipmQ=
 		</data>
 		<key>Modules/ChatBot.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		IG8OJqVEtchzSHfdqzqbC8JaN0I=
+		8fkq9GPPlAhlWpT4TYLzRh4WKJQ=
 		</data>
 		<key>Modules/ChatBot.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		EhlB3WFQ3CyjJfZjWuAA3gEGjZQ=
+		2We+9+i8Tezr+TVxkBXJuOg61co=
 		</data>
 		<key>Modules/ChatBot.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -94,11 +98,31 @@
 		</data>
 		<key>Modules/ChatBot.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		EhlB3WFQ3CyjJfZjWuAA3gEGjZQ=
+		2We+9+i8Tezr+TVxkBXJuOg61co=
 		</data>
 		<key>Modules/ChatBot.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		tcRd0dPdMti7vMiqokFiFVLa0Ag=
+		pVGgJyd7YSKlKf84XhlzrGK3fzM=
+		</data>
+		<key>Modules/ChatBot.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		8fkq9GPPlAhlWpT4TYLzRh4WKJQ=
+		</data>
+		<key>Modules/ChatBot.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		y6znbRcehobu08tfT1T2z2RFAjc=
+		</data>
+		<key>Modules/ChatBot.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		0k4Zn0Adw2hlaE2E3wjcu7kWHNk=
+		</data>
+		<key>Modules/ChatBot.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		y6znbRcehobu08tfT1T2z2RFAjc=
+		</data>
+		<key>Modules/ChatBot.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		m3zndE0UEw938hEsILeVw+r/GWE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -115,10 +139,6 @@
 		<key>PrivacyPolicyViewController.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib</key>
 		<data>
 		LwxaQCTemwDYiRYSf6uhZexypkA=
-		</data>
-		<key>circularLoading.json</key>
-		<data>
-		1xSY9UHrADocDIm16hTktfIMXpA=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -141,7 +161,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HbnJNzud7S4CB60BCGwezC26PaLK2Rzdyq+9AXTayKY=
+			Ux6fTz7QJBhpyErudZ7Lr25NLoFWazQ4YxRMmETo3Lk=
 			</data>
 		</dict>
 		<key>BannerView.nib</key>
@@ -155,7 +175,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			w2vdpMqHs87Rx8ufVB3YSSjgPnMfMdwIqKQZ1DOlgAE=
+			B4oB/sAX1cP95Iui7+5XG6h/U0WRDijIStS/w00JUiA=
 			</data>
 		</dict>
 		<key>ChatBotHistoryViewController.storyboardc/ChatBotHistoryViewController.nib</key>
@@ -225,7 +245,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kMQHaWNBb3A3AW07c03JhkXqLex0Cnp/mN8dHiPtKQA=
+			XC2BS4G6Uda8HAVgeWxKm4OxmxkpOr6eYvJ/ZD0LZfs=
 			</data>
 		</dict>
 		<key>Headers/ChatBot.h</key>
@@ -246,21 +266,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Qi/dan46hBMy27ZsxFNvX1rWOdC4kt/m2ci6LVN2Zw4=
+			uGiyVTtMO6Ks4eeFMQgSDgAw6QIz74ZARl4hp+qZ/E0=
+			</data>
+		</dict>
+		<key>Modules/ChatBot.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zt2ZipDNUFbB1Bp64zbkyi5LO3kEawpJooleWf3zSWM=
 			</data>
 		</dict>
 		<key>Modules/ChatBot.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			91geJB681f/luZQRfoqBHkV8pn6QKRbI+n2WWjAn0Wg=
+			wwVPhTE4hqNlNm6Hd7xJFTYI7KSzC3EFaZ6VYEv/rs0=
 			</data>
 		</dict>
 		<key>Modules/ChatBot.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0v6qzF4tv2LOcyPaQ3t4oaHcMTHrNuhIEldv68tIawk=
+			4c3lw0fNiJJI5Hxxd7WXL3gF6+LmUS3Cx0AqEF0bK3E=
 			</data>
 		</dict>
 		<key>Modules/ChatBot.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -274,14 +301,49 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0v6qzF4tv2LOcyPaQ3t4oaHcMTHrNuhIEldv68tIawk=
+			4c3lw0fNiJJI5Hxxd7WXL3gF6+LmUS3Cx0AqEF0bK3E=
 			</data>
 		</dict>
 		<key>Modules/ChatBot.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zjDOVrnwfq1qhoLMK7czaWXwNvy1DCP/xnopxOGNa58=
+			vu0+bbb0ziu9LZ4bddG7RphkW2+BCvomd4Mf8L8cx2Y=
+			</data>
+		</dict>
+		<key>Modules/ChatBot.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wwVPhTE4hqNlNm6Hd7xJFTYI7KSzC3EFaZ6VYEv/rs0=
+			</data>
+		</dict>
+		<key>Modules/ChatBot.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			F9uty3NRKgmRqibVVXOhDuUyIvS9Nr20xNxI8bs79IA=
+			</data>
+		</dict>
+		<key>Modules/ChatBot.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			M58pVKb+/YXnmq9u/gXzrrar6oNgrDbag5iS75gqbvo=
+			</data>
+		</dict>
+		<key>Modules/ChatBot.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			F9uty3NRKgmRqibVVXOhDuUyIvS9Nr20xNxI8bs79IA=
+			</data>
+		</dict>
+		<key>Modules/ChatBot.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rbmF9pZ7atpMGqiD0+KY7m+MYU0wTOVpRrduKtW308s=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -310,13 +372,6 @@
 			<key>hash2</key>
 			<data>
 			hfJ9y9CNOGbxd/tbh0fXWvyailL4TrjakylM4KLlkwQ=
-			</data>
-		</dict>
-		<key>circularLoading.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			a2IdTjxus3BoFywHSXpJlGTR16GYGqCbdYljC99wW9k=
 			</data>
 		</dict>
 	</dict>
