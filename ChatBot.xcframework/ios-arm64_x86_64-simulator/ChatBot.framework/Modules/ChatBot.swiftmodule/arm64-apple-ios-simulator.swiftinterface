@@ -8,6 +8,7 @@ import DeveloperToolsSupport
 import Foundation
 import Swift
 import SwiftUI
+import SystemConfiguration
 import UIKit
 import WebKit
 import _Concurrency
@@ -15,6 +16,9 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import os.log
 import os
+public protocol ChatBotAdView : UIKit.UIView {
+  func didTapAd()
+}
 public protocol ChatBotDelegate : AnyObject {
   func chatBotDidClose(showPaywall: Swift.Bool)
 }
@@ -44,10 +48,13 @@ public enum LocalizedStrings {
   }
   public enum ChatScreen {
     public static let textViewPlaceholder: Swift.String
+    public static let todayHeaderTitle: Swift.String
   }
   public enum PrivacyPolicyScreen {
     public static let privacyPolicyControllerTitle: Swift.String
     public static let privacyPolicyDoneButtonTitle: Swift.String
+  }
+  public enum InfoView {
   }
   public enum Toast {
   }
@@ -75,5 +82,8 @@ public protocol ChatBotAnimatableView : UIKit.UIView {
   func stopAnimation()
 }
 public struct ChatBotConfiguration {
-  public init(privacyPolicyUrl: Swift.String, authHeaderName: Swift.String, authHeaderValue: Swift.String, headerUserPremiumValue: Swift.String, requestStartUrl: Swift.String, requestHistoryUrl: Swift.String, requestSendMessageUrl: Swift.String, requestCheckOptInUrl: Swift.String, requestPostOptInUrl: Swift.String, requestClearHistoryUrl: Swift.String, userImage: UIKit.UIImage, byPassLimits: Swift.Bool, useLightTheme: Swift.Bool, chatBotAnimatableViewFactory: any ChatBot.ChatBotAnimatableViewFactory)
+  public init(privacyPolicyUrl: Swift.String, authHeaderName: Swift.String, authHeaderValue: Swift.String, headerUserPremiumValue: Swift.String, requestStartUrl: Swift.String, requestHistoryUrl: Swift.String, requestSendMessageUrl: Swift.String, requestCheckOptInUrl: Swift.String, requestPostOptInUrl: Swift.String, requestClearHistoryUrl: Swift.String, userImage: UIKit.UIImage, byPassLimits: Swift.Bool, useLightTheme: Swift.Bool, chatBotAnimatableViewFactory: any ChatBot.ChatBotAnimatableViewFactory, chatBotAdViewFactory: (any ChatBot.ChatBotAdViewFactory)?)
+}
+public protocol ChatBotAdViewFactory {
+  func makeChatBotAdView() -> any ChatBot.ChatBotAdView
 }
