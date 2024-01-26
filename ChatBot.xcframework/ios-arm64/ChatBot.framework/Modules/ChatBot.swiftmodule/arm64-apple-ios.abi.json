@@ -11568,7 +11568,7 @@
           {
             "kind": "Function",
             "name": "requestCheckOptIn",
-            "printedName": "requestCheckOptIn(completion:)",
+            "printedName": "requestCheckOptIn(completion:failureHandler:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -11592,11 +11592,28 @@
                     "usr": "s:7ChatBot18CheckOptInResponseV"
                   }
                 ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:7ChatBot0aB19SelectionInteractorC17requestCheckOptIn10completionyyAA0fgH8ResponseVc_tF",
-            "mangledName": "$s7ChatBot0aB19SelectionInteractorC17requestCheckOptIn10completionyyAA0fgH8ResponseVc_tF",
+            "usr": "s:7ChatBot0aB19SelectionInteractorC17requestCheckOptIn10completion14failureHandleryyAA0fgH8ResponseVc_yyctF",
+            "mangledName": "$s7ChatBot0aB19SelectionInteractorC17requestCheckOptIn10completion14failureHandleryyAA0fgH8ResponseVc_yyctF",
             "moduleName": "ChatBot",
             "isOpen": true,
             "funcSelfKind": "NonMutating"
@@ -11604,7 +11621,7 @@
           {
             "kind": "Function",
             "name": "requestPostOptIn",
-            "printedName": "requestPostOptIn(completion:)",
+            "printedName": "requestPostOptIn(completion:failureHandler:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -11637,11 +11654,37 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:7ChatBot0aB19SelectionInteractorC16requestPostOptIn10completionyyAA0gH8ResponseVcSg_tF",
-            "mangledName": "$s7ChatBot0aB19SelectionInteractorC16requestPostOptIn10completionyyAA0gH8ResponseVcSg_tF",
+            "usr": "s:7ChatBot0aB19SelectionInteractorC16requestPostOptIn10completion14failureHandleryyAA0gH8ResponseVcSg_yycSgtF",
+            "mangledName": "$s7ChatBot0aB19SelectionInteractorC16requestPostOptIn10completion14failureHandleryyAA0gH8ResponseVcSg_yycSgtF",
             "moduleName": "ChatBot",
             "isOpen": true,
             "funcSelfKind": "NonMutating"
@@ -20918,7 +20961,7 @@
           {
             "kind": "Function",
             "name": "tableViewCellLongPressHandler",
-            "printedName": "tableViewCellLongPressHandler(_:isLast:)",
+            "printedName": "tableViewCellLongPressHandler(_:messageIndex:isLast:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -20933,14 +20976,20 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:7ChatBot0aB20HistoryTableDelegateP29tableViewCellLongPressHandler_6isLastyAA0abcH0C_SbtF",
-            "mangledName": "$s7ChatBot0aB20HistoryTableDelegateP29tableViewCellLongPressHandler_6isLastyAA0abcH0C_SbtF",
+            "usr": "s:7ChatBot0aB20HistoryTableDelegateP29tableViewCellLongPressHandler_12messageIndex6isLastyAA0abcH0C_SiSbtF",
+            "mangledName": "$s7ChatBot0aB20HistoryTableDelegateP29tableViewCellLongPressHandler_12messageIndex6isLastyAA0abcH0C_SiSbtF",
             "moduleName": "ChatBot",
             "genericSig": "<τ_0_0 where τ_0_0 : ChatBot.ChatBotHistoryTableDelegate>",
             "sugared_genericSig": "<Self where Self : ChatBot.ChatBotHistoryTableDelegate>",
@@ -24303,7 +24352,7 @@
           {
             "kind": "Function",
             "name": "show",
-            "printedName": "show(for:regenerate:)",
+            "printedName": "show(for:messageIndex:regenerate:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -24318,14 +24367,20 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:7ChatBot10ActionViewC4show3for10regenerateyAA0aB12HistoryModelV_SbtF",
-            "mangledName": "$s7ChatBot10ActionViewC4show3for10regenerateyAA0aB12HistoryModelV_SbtF",
+            "usr": "s:7ChatBot10ActionViewC4show3for12messageIndex10regenerateyAA0aB12HistoryModelV_SiSbtF",
+            "mangledName": "$s7ChatBot10ActionViewC4show3for12messageIndex10regenerateyAA0aB12HistoryModelV_SiSbtF",
             "moduleName": "ChatBot",
             "isOpen": true,
             "declAttributes": [
@@ -26269,19 +26324,19 @@
           },
           {
             "kind": "Var",
-            "name": "userImage",
-            "printedName": "userImage",
+            "name": "userPictureUri",
+            "printedName": "userPictureUri",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "UIImage",
-                "printedName": "UIKit.UIImage",
-                "usr": "c:objc(cs)UIImage"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Var",
-            "usr": "s:7ChatBot0aB13ConfigurationV9userImageSo7UIImageCvp",
-            "mangledName": "$s7ChatBot0aB13ConfigurationV9userImageSo7UIImageCvp",
+            "usr": "s:7ChatBot0aB13ConfigurationV14userPictureUriSSvp",
+            "mangledName": "$s7ChatBot0aB13ConfigurationV14userPictureUriSSvp",
             "moduleName": "ChatBot",
             "declAttributes": [
               "HasStorage"
@@ -26296,14 +26351,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "UIImage",
-                    "printedName": "UIKit.UIImage",
-                    "usr": "c:objc(cs)UIImage"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7ChatBot0aB13ConfigurationV9userImageSo7UIImageCvg",
-                "mangledName": "$s7ChatBot0aB13ConfigurationV9userImageSo7UIImageCvg",
+                "usr": "s:7ChatBot0aB13ConfigurationV14userPictureUriSSvg",
+                "mangledName": "$s7ChatBot0aB13ConfigurationV14userPictureUriSSvg",
                 "moduleName": "ChatBot",
                 "implicit": true,
                 "accessorKind": "get"
@@ -26501,7 +26556,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(privacyPolicyUrl:authHeaderName:authHeaderValue:headerUserPremiumValue:requestStartUrl:requestHistoryUrl:requestSendMessageUrl:requestCheckOptInUrl:requestPostOptInUrl:requestClearHistoryUrl:userImage:byPassLimits:useLightTheme:chatBotAnimatableViewFactory:chatBotAdViewFactory:)",
+            "printedName": "init(privacyPolicyUrl:authHeaderName:authHeaderValue:headerUserPremiumValue:requestStartUrl:requestHistoryUrl:requestSendMessageUrl:requestCheckOptInUrl:requestPostOptInUrl:requestClearHistoryUrl:userPictureUri:byPassLimits:useLightTheme:chatBotAnimatableViewFactory:chatBotAdViewFactory:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -26571,9 +26626,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "UIImage",
-                "printedName": "UIKit.UIImage",
-                "usr": "c:objc(cs)UIImage"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -26609,8 +26664,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:7ChatBot0aB13ConfigurationV16privacyPolicyUrl14authHeaderName0gH5Value017headerUserPremiumJ0012requestStartF00n7HistoryF00n11SendMessageF00n10CheckOptInF00n4PosttuF00n5ClearpF09userImage12byPassLimits13useLightTheme04chatB21AnimatableViewFactory04chatB13AdViewFactoryACSS_S9SSo7UIImageCS2bAA0aB21AnimatableViewFactory_pAA0aB13AdViewFactory_pSgtcfc",
-            "mangledName": "$s7ChatBot0aB13ConfigurationV16privacyPolicyUrl14authHeaderName0gH5Value017headerUserPremiumJ0012requestStartF00n7HistoryF00n11SendMessageF00n10CheckOptInF00n4PosttuF00n5ClearpF09userImage12byPassLimits13useLightTheme04chatB21AnimatableViewFactory04chatB13AdViewFactoryACSS_S9SSo7UIImageCS2bAA0aB21AnimatableViewFactory_pAA0aB13AdViewFactory_pSgtcfc",
+            "usr": "s:7ChatBot0aB13ConfigurationV16privacyPolicyUrl14authHeaderName0gH5Value017headerUserPremiumJ0012requestStartF00n7HistoryF00n11SendMessageF00n10CheckOptInF00n4PosttuF00n5ClearpF014userPictureUri12byPassLimits13useLightTheme04chatB21AnimatableViewFactory04chatB13AdViewFactoryACSS_S10SS2bAA0aB21AnimatableViewFactory_pAA0aB13AdViewFactory_pSgtcfc",
+            "mangledName": "$s7ChatBot0aB13ConfigurationV16privacyPolicyUrl14authHeaderName0gH5Value017headerUserPremiumJ0012requestStartF00n7HistoryF00n11SendMessageF00n10CheckOptInF00n4PosttuF00n5ClearpF014userPictureUri12byPassLimits13useLightTheme04chatB21AnimatableViewFactory04chatB13AdViewFactoryACSS_S10SS2bAA0aB21AnimatableViewFactory_pAA0aB13AdViewFactory_pSgtcfc",
             "moduleName": "ChatBot",
             "declAttributes": [
               "AccessControl"
@@ -33264,7 +33319,7 @@
           {
             "kind": "Function",
             "name": "tableViewCellLongPressHandler",
-            "printedName": "tableViewCellLongPressHandler(_:isLast:)",
+            "printedName": "tableViewCellLongPressHandler(_:messageIndex:isLast:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -33279,14 +33334,20 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:7ChatBot0aB21HistoryViewControllerC05tableD20CellLongPressHandler_6isLastyAA0abcG0C_SbtF",
-            "mangledName": "$s7ChatBot0aB21HistoryViewControllerC05tableD20CellLongPressHandler_6isLastyAA0abcG0C_SbtF",
+            "usr": "s:7ChatBot0aB21HistoryViewControllerC05tableD20CellLongPressHandler_12messageIndex6isLastyAA0abcG0C_SiSbtF",
+            "mangledName": "$s7ChatBot0aB21HistoryViewControllerC05tableD20CellLongPressHandler_12messageIndex6isLastyAA0abcG0C_SiSbtF",
             "moduleName": "ChatBot",
             "isOpen": true,
             "declAttributes": [
@@ -35478,104 +35539,83 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:7ChatBot0aB11HistoryCellC19currentMessageIndex026_46DDDA5EA738AD033DE62E7E1K3D67LLSivp",
-            "mangledName": "$s7ChatBot0aB11HistoryCellC19currentMessageIndex026_46DDDA5EA738AD033DE62E7E1K3D67LLSivp",
+            "usr": "s:7ChatBot0aB11HistoryCellC19currentMessageIndexSivp",
+            "mangledName": "$s7ChatBot0aB11HistoryCellC19currentMessageIndexSivp",
             "moduleName": "ChatBot",
-            "isInternal": true,
+            "isOpen": true,
             "declAttributes": [
-              "HasInitialValue",
               "Custom",
-              "HasStorage",
-              "AccessControl"
+              "HasInitialValue",
+              "HasStorage"
             ],
             "fixedbinaryorder": 17,
-            "hasStorage": true
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(style:reuseIdentifier:)",
-            "children": [
+            "hasStorage": true,
+            "accessors": [
               {
-                "kind": "TypeNominal",
-                "name": "ChatBotHistoryCell",
-                "printedName": "ChatBot.ChatBotHistoryCell",
-                "usr": "c:@M@ChatBot@objc(cs)ChatBotHistoryCell"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CellStyle",
-                "printedName": "UIKit.UITableViewCell.CellStyle",
-                "usr": "c:@E@UITableViewCellStyle"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
                   }
                 ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@ChatBot@objc(cs)ChatBotHistoryCell(im)initWithStyle:reuseIdentifier:",
-            "mangledName": "$s7ChatBot0aB11HistoryCellC5style15reuseIdentifierACSo011UITableViewD5StyleV_SSSgtcfc",
-            "moduleName": "ChatBot",
-            "overriding": true,
-            "objc_name": "initWithStyle:reuseIdentifier:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(coder:)",
-            "children": [
+                "declKind": "Accessor",
+                "usr": "s:7ChatBot0aB11HistoryCellC19currentMessageIndexSivg",
+                "mangledName": "$s7ChatBot0aB11HistoryCellC19currentMessageIndexSivg",
+                "moduleName": "ChatBot",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
               {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "ChatBot.ChatBotHistoryCell?",
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "ChatBotHistoryCell",
-                    "printedName": "ChatBot.ChatBotHistoryCell",
-                    "usr": "c:@M@ChatBot@objc(cs)ChatBotHistoryCell"
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
                   }
                 ],
-                "usr": "s:Sq"
+                "declKind": "Accessor",
+                "usr": "s:7ChatBot0aB11HistoryCellC19currentMessageIndexSivs",
+                "mangledName": "$s7ChatBot0aB11HistoryCellC19currentMessageIndexSivs",
+                "moduleName": "ChatBot",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
               },
               {
-                "kind": "TypeNominal",
-                "name": "NSCoder",
-                "printedName": "Foundation.NSCoder",
-                "usr": "c:objc(cs)NSCoder"
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7ChatBot0aB11HistoryCellC19currentMessageIndexSivM",
+                "mangledName": "$s7ChatBot0aB11HistoryCellC19currentMessageIndexSivM",
+                "moduleName": "ChatBot",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
               }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@ChatBot@objc(cs)ChatBotHistoryCell(im)initWithCoder:",
-            "mangledName": "$s7ChatBot0aB11HistoryCellC5coderACSgSo7NSCoderC_tcfc",
-            "moduleName": "ChatBot",
-            "overriding": true,
-            "objc_name": "initWithCoder:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Required"
-            ],
-            "init_kind": "Designated"
+            ]
           },
           {
             "kind": "Function",
@@ -35713,6 +35753,96 @@
               "Custom"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(style:reuseIdentifier:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ChatBotHistoryCell",
+                "printedName": "ChatBot.ChatBotHistoryCell",
+                "usr": "c:@M@ChatBot@objc(cs)ChatBotHistoryCell"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CellStyle",
+                "printedName": "UIKit.UITableViewCell.CellStyle",
+                "usr": "c:@E@UITableViewCellStyle"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ChatBot@objc(cs)ChatBotHistoryCell(im)initWithStyle:reuseIdentifier:",
+            "mangledName": "$s7ChatBot0aB11HistoryCellC5style15reuseIdentifierACSo011UITableViewD5StyleV_SSSgtcfc",
+            "moduleName": "ChatBot",
+            "overriding": true,
+            "implicit": true,
+            "intro_iOS": "3.0",
+            "objc_name": "initWithStyle:reuseIdentifier:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "Available"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ChatBot.ChatBotHistoryCell?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ChatBotHistoryCell",
+                    "printedName": "ChatBot.ChatBotHistoryCell",
+                    "usr": "c:@M@ChatBot@objc(cs)ChatBotHistoryCell"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ChatBot@objc(cs)ChatBotHistoryCell(im)initWithCoder:",
+            "mangledName": "$s7ChatBot0aB11HistoryCellC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "ChatBot",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Required"
+            ],
+            "init_kind": "Designated"
           }
         ],
         "declKind": "Class",
@@ -37286,110 +37416,6 @@
           },
           {
             "kind": "Var",
-            "name": "iconStopRespondingDark",
-            "printedName": "iconStopRespondingDark",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ImageResource",
-                "printedName": "ChatBot.ImageResource",
-                "usr": "s:7ChatBot13ImageResourceV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7ChatBot13ImageResourceV22iconStopRespondingDarkACvpZ",
-            "mangledName": "$s7ChatBot13ImageResourceV22iconStopRespondingDarkACvpZ",
-            "moduleName": "ChatBot",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ImageResource",
-                    "printedName": "ChatBot.ImageResource",
-                    "usr": "s:7ChatBot13ImageResourceV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7ChatBot13ImageResourceV22iconStopRespondingDarkACvgZ",
-                "mangledName": "$s7ChatBot13ImageResourceV22iconStopRespondingDarkACvgZ",
-                "moduleName": "ChatBot",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "iconStopRespondingLight",
-            "printedName": "iconStopRespondingLight",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ImageResource",
-                "printedName": "ChatBot.ImageResource",
-                "usr": "s:7ChatBot13ImageResourceV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7ChatBot13ImageResourceV23iconStopRespondingLightACvpZ",
-            "mangledName": "$s7ChatBot13ImageResourceV23iconStopRespondingLightACvpZ",
-            "moduleName": "ChatBot",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ImageResource",
-                    "printedName": "ChatBot.ImageResource",
-                    "usr": "s:7ChatBot13ImageResourceV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7ChatBot13ImageResourceV23iconStopRespondingLightACvgZ",
-                "mangledName": "$s7ChatBot13ImageResourceV23iconStopRespondingLightACvgZ",
-                "moduleName": "ChatBot",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "iconThumbsDownDark",
             "printedName": "iconThumbsDownDark",
             "children": [
@@ -37637,58 +37663,6 @@
                 "declKind": "Accessor",
                 "usr": "s:7ChatBot13ImageResourceV4rubyACvgZ",
                 "mangledName": "$s7ChatBot13ImageResourceV4rubyACvgZ",
-                "moduleName": "ChatBot",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "user",
-            "printedName": "user",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ImageResource",
-                "printedName": "ChatBot.ImageResource",
-                "usr": "s:7ChatBot13ImageResourceV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7ChatBot13ImageResourceV4userACvpZ",
-            "mangledName": "$s7ChatBot13ImageResourceV4userACvpZ",
-            "moduleName": "ChatBot",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ImageResource",
-                    "printedName": "ChatBot.ImageResource",
-                    "usr": "s:7ChatBot13ImageResourceV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7ChatBot13ImageResourceV4userACvgZ",
-                "mangledName": "$s7ChatBot13ImageResourceV4userACvgZ",
                 "moduleName": "ChatBot",
                 "static": true,
                 "implicit": true,
@@ -39870,102 +39844,6 @@
           },
           {
             "kind": "Var",
-            "name": "iconStopRespondingDark",
-            "printedName": "iconStopRespondingDark",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIImage",
-                "printedName": "UIKit.UIImage",
-                "usr": "c:objc(cs)UIImage"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:So7UIImageC7ChatBotE22iconStopRespondingDarkABvpZ",
-            "mangledName": "$sSo7UIImageC7ChatBotE22iconStopRespondingDarkABvpZ",
-            "moduleName": "ChatBot",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIImage",
-                    "printedName": "UIKit.UIImage",
-                    "usr": "c:objc(cs)UIImage"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:So7UIImageC7ChatBotE22iconStopRespondingDarkABvgZ",
-                "mangledName": "$sSo7UIImageC7ChatBotE22iconStopRespondingDarkABvgZ",
-                "moduleName": "ChatBot",
-                "static": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "iconStopRespondingLight",
-            "printedName": "iconStopRespondingLight",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIImage",
-                "printedName": "UIKit.UIImage",
-                "usr": "c:objc(cs)UIImage"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:So7UIImageC7ChatBotE23iconStopRespondingLightABvpZ",
-            "mangledName": "$sSo7UIImageC7ChatBotE23iconStopRespondingLightABvpZ",
-            "moduleName": "ChatBot",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIImage",
-                    "printedName": "UIKit.UIImage",
-                    "usr": "c:objc(cs)UIImage"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:So7UIImageC7ChatBotE23iconStopRespondingLightABvgZ",
-                "mangledName": "$sSo7UIImageC7ChatBotE23iconStopRespondingLightABvgZ",
-                "moduleName": "ChatBot",
-                "static": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "iconThumbsDownDark",
             "printedName": "iconThumbsDownDark",
             "children": [
@@ -40194,54 +40072,6 @@
                 "declKind": "Accessor",
                 "usr": "s:So7UIImageC7ChatBotE4rubyABvgZ",
                 "mangledName": "$sSo7UIImageC7ChatBotE4rubyABvgZ",
-                "moduleName": "ChatBot",
-                "static": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "user",
-            "printedName": "user",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIImage",
-                "printedName": "UIKit.UIImage",
-                "usr": "c:objc(cs)UIImage"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:So7UIImageC7ChatBotE4userABvpZ",
-            "mangledName": "$sSo7UIImageC7ChatBotE4userABvpZ",
-            "moduleName": "ChatBot",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIImage",
-                    "printedName": "UIKit.UIImage",
-                    "usr": "c:objc(cs)UIImage"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:So7UIImageC7ChatBotE4userABvgZ",
-                "mangledName": "$sSo7UIImageC7ChatBotE4userABvgZ",
                 "moduleName": "ChatBot",
                 "static": true,
                 "declAttributes": [
@@ -41108,14 +40938,14 @@
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Controllers\/Chat\/ChatBotHistoryTableHandler.swift",
       "kind": "Array",
-      "offset": 650,
+      "offset": 669,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Controllers\/Chat\/ChatBotHistoryTableHandler.swift",
       "kind": "StringLiteral",
-      "offset": 415,
+      "offset": 434,
       "length": 26,
       "value": "\"ChatBot.ChatBotHistoryTableHandler\""
     },
@@ -41869,13 +41699,6 @@
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ivanghulidau\/Workspace\/gettr-modules-ios\/gettr-modules-ios\/ChatBot\/ChatBot\/Controllers\/Chat\/ChatBotHistoryCell.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1118,
-      "length": 5,
-      "value": "false"
-    },
-    {
       "filePath": "\/Users\/ivanghulidau\/Library\/Developer\/Xcode\/DerivedData\/GettrModules-ehrlbqdbpynbptbmflhiezhfpjiy\/Build\/Intermediates.noindex\/ChatBot.build\/Debug-iphoneos\/ChatBot.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 725,
@@ -42018,58 +41841,37 @@
     {
       "filePath": "\/Users\/ivanghulidau\/Library\/Developer\/Xcode\/DerivedData\/GettrModules-ehrlbqdbpynbptbmflhiezhfpjiy\/Build\/Intermediates.noindex\/ChatBot.build\/Debug-iphoneos\/ChatBot.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3935,
-      "length": 27,
-      "value": "\"icon_stop_responding_dark\""
-    },
-    {
-      "filePath": "\/Users\/ivanghulidau\/Library\/Developer\/Xcode\/DerivedData\/GettrModules-ehrlbqdbpynbptbmflhiezhfpjiy\/Build\/Intermediates.noindex\/ChatBot.build\/Debug-iphoneos\/ChatBot.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 4121,
-      "length": 28,
-      "value": "\"icon_stop_responding_light\""
-    },
-    {
-      "filePath": "\/Users\/ivanghulidau\/Library\/Developer\/Xcode\/DerivedData\/GettrModules-ehrlbqdbpynbptbmflhiezhfpjiy\/Build\/Intermediates.noindex\/ChatBot.build\/Debug-iphoneos\/ChatBot.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 4298,
+      "offset": 3927,
       "length": 23,
       "value": "\"icon_thumbs_down_dark\""
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Library\/Developer\/Xcode\/DerivedData\/GettrModules-ehrlbqdbpynbptbmflhiezhfpjiy\/Build\/Intermediates.noindex\/ChatBot.build\/Debug-iphoneos\/ChatBot.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4472,
+      "offset": 4101,
       "length": 24,
       "value": "\"icon_thumbs_down_light\""
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Library\/Developer\/Xcode\/DerivedData\/GettrModules-ehrlbqdbpynbptbmflhiezhfpjiy\/Build\/Intermediates.noindex\/ChatBot.build\/Debug-iphoneos\/ChatBot.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4641,
+      "offset": 4270,
       "length": 21,
       "value": "\"icon_thumbs_up_dark\""
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Library\/Developer\/Xcode\/DerivedData\/GettrModules-ehrlbqdbpynbptbmflhiezhfpjiy\/Build\/Intermediates.noindex\/ChatBot.build\/Debug-iphoneos\/ChatBot.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4809,
+      "offset": 4438,
       "length": 22,
       "value": "\"icon_thumbs_up_light\""
     },
     {
       "filePath": "\/Users\/ivanghulidau\/Library\/Developer\/Xcode\/DerivedData\/GettrModules-ehrlbqdbpynbptbmflhiezhfpjiy\/Build\/Intermediates.noindex\/ChatBot.build\/Debug-iphoneos\/ChatBot.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4949,
+      "offset": 4578,
       "length": 6,
       "value": "\"ruby\""
-    },
-    {
-      "filePath": "\/Users\/ivanghulidau\/Library\/Developer\/Xcode\/DerivedData\/GettrModules-ehrlbqdbpynbptbmflhiezhfpjiy\/Build\/Intermediates.noindex\/ChatBot.build\/Debug-iphoneos\/ChatBot.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 5073,
-      "length": 6,
-      "value": "\"user\""
     }
   ]
 }
